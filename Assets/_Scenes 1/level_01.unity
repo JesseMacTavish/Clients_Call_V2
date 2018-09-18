@@ -1814,6 +1814,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!224 &314766101 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224013341964876264, guid: 5874098544f1c1b4d925cfc6acf10170,
+    type: 2}
+  m_PrefabInternal: {fileID: 1987728564}
+--- !u!114 &314766102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114739562426115346, guid: 5874098544f1c1b4d925cfc6acf10170,
+    type: 2}
+  m_PrefabInternal: {fileID: 1987728564}
+  m_Script: {fileID: 11500000, guid: 069875fdb691a2d4a8e8086b35e62c96, type: 3}
 --- !u!1 &315745587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,11 +2317,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!224 &387012758 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224830765385418270, guid: 5874098544f1c1b4d925cfc6acf10170,
-    type: 2}
-  m_PrefabInternal: {fileID: 1987728564}
 --- !u!1 &410719098
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,7 +5902,7 @@ GameObject:
   - component: {fileID: 960498752}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5968,7 +5974,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 387012758}
+  - {fileID: 314766101}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11506,7 +11512,7 @@ Prefab:
         type: 2}
       propertyPath: _healthbar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 314766102}
     - target: {fileID: 212773808761581138, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
