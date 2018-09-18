@@ -128,12 +128,4 @@ public class EnemyHandler : MonoBehaviour
             _readyToAttack.RemoveAt(0);
         }
     }
-
-    public List<GameObject> Enemies
-    {
-        get
-        {
-            return _enemies;
-        }
-    }
 }

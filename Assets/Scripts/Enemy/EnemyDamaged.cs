@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class EnemyDamaged : MonoBehaviour
 {
-    private Animator _animator;
+    private EnemyAnimation _animator;
 
     // Use this for initialization
     void Start()
     {
-        _animator = GetComponent<Animator>();
+        _animator = GetComponent<EnemyAnimation>();
     }
 
     public void DamageAnimation()
     {
-        _animator.Play("EnemyDamage");
+        _animator.DamageAnimation();
     }
 
     public void DamageAirAnimation()
     {
-        _animator.Play("EnemyDamageAir");
+        _animator.KnockUpDamageAnimation();
     }
 }

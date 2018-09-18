@@ -5,122 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/_Scenes/Dialog scene.unity
+    guid: 1b12769767adaa44cb7184f7f60df98d
+  - enabled: 0
+    path: Assets/_Scenes/SampleScene.unity
+    guid: 16f70dab5ac8f8344936868769c86e53
   - enabled: 1
-    path: Assets/_Scenes/level_design.unity
-    guid: 1297c1ca0b688b145b5359ce864f74fd
-  - enabled: 1
-    path: Assets/_Scenes 1/level_01.unity
-    guid: 16590c2745e99d54f9c850d9da0f4962
-  - enabled: 1
-    path: Assets/_Scenes 1/level_02.unity
-    guid: 1a5da5a84884547409121bbe06df3946
-  - enabled: 1
-    path: Assets/_Scenes 1/level_03.unity
-    guid: 200ea6dc700f63442bf53fe9387b0edd
-  - enabled: 1
-    path: Assets/_Scenes 1/level_04.unity
-    guid: 64323e5fae8f7ae449893e2ff18f6258
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/n_00_meet_angela.unity
-    guid: 914ce7948a0ec264dbabab6c9651d1c0
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/n_01_help_angela.unity
-    guid: ac86a8fbfdae2494bb16535e85c5cf50
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/n_start.unity
-    guid: c72d5c51967b2eb4099fa88b057815db
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/n_03_1_angela_captured.unity
-    guid: 1258816bbc5df2e43ab44dfa439ecdb0
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/n_03_angela_captured.unity
-    guid: 8e3d3bfdb8b1ec446b5582a37fb2983d
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/n_05_angela_captured_blacksmith.unity
-    guid: 4b60ff67c5a967c4b8f1522f45919a77
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/n_05_angela_captured_blacksmith_captured
-      3.unity
-    guid: 75393a86c75bc4d4d85b22bba209a852
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/n_07_angela_captured_city.unity
-    guid: c250052b093dd3c4ab151daec165a177
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_05_2_angela_captured_blacksmith_captured
-      1.unity
-    guid: e0776f0f5cea3c54c8c9fbfedd7a58a4
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_07_angela_2_captured_blacksmith_captured_city
-      1.unity
-    guid: 28e69d43d9b6db44a936125d8e3976e0
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_07_angela_captured_blacksmith_captured_city.unity
-    guid: e4e6434b37a17c841b19bf66909838f8
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_07_angela_captured_city
-      1.unity
-    guid: 9f39dc8c65195764bb21c3b2fd056539
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/n_05_2_angela_captured_blacksmith_alive
-      2.unity
-    guid: 7edb90a844763584ea89504b8e82922f
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/n_07_angela_captured_blacksmith_captured_city
-      1.unity
-    guid: c44e34c9d4cd6d947a8acc672cdb8c7a
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/n_02_1_angela_saved.unity
-    guid: 5561e39b8534e80429dd4dff4a3d5464
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/n_02_angela_saved.unity
-    guid: e73622b60420c81469ba6c608af9af49
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/n_04_angela_alive_blacksmith.unity
-    guid: a026bb306630ba14f96b809d361ef039
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/n_04_angela_alive_blacksmith 2.unity
-    guid: 12b4db88330ae3d40919f0e50b933807
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/n_06_angela_alive_city.unity
-    guid: bb36dc6525038264b8200b96f6a60b1b
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/n_04_2_angela_captured_blacksmith_captured
-      2.unity
-    guid: c9ba04788c8d91842902a4dac3fa6c00
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/n_06_angela_alive_city
-      1.unity
-    guid: 9545a6e7502e42042b922f9c690be756
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/n_07_angela_2_alive_blacksmith_captured_city
-      2.unity
-    guid: 2284ecf8717dc20478d76545b698328a
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/n_07_angela_alive_blacksmith_captured_city
-      1.unity
-    guid: d66f5ac2a2799f74184235602dcb96a9
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/n_04_2_angela_alive_blacksmith_alive
-      2.unity
-    guid: 4398cc582a6ebe6448c88615c657fd3b
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/n_06_angela_alive_city
-      1.unity
-    guid: 55cc45ec10ca5fe4bb60c1f5463d6aac
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/n_07_angela_2_alive_blacksmith_alive_city
-      3.unity
-    guid: 5d487ab6edfac154597d90124066b7a2
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/n_07_angela_alive_blacksmith_alive_city
-      1.unity
-    guid: 958c64c2a41639b4682db3cae87aed2f
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_elizabeth 1/n_07_angela_2_alive_blacksmith_captured_Elizabeth
-      3.unity
-    guid: ca022c67be2f62a4687da3194b3524c6
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_elizabeth 1/Leave/n_09_angela_2_alive_blacksmith_captured_Elizabeth_no
-      4.unity
-    guid: 009fd0443a1c68b4590e1874399e70a6
+    path: Assets/_Scenes/level_01.unity
+    guid: f94312b52fd7cae498226aec365968f0
+  - enabled: 0
+    path: Assets/_Scenes/level_02.unity
+    guid: b792bcadcc70fba4caa9f25f9be584fb
+  - enabled: 0
+    path: Assets/_Scenes/level_03.unity
+    guid: c3c53808ccd086b4f93d0c5b5a515766
+  - enabled: 0
+    path: Assets/_Scenes/level_04.unity
+    guid: 3627b3e975d6bab459a7e904f109db7b
   m_configObjects: {}

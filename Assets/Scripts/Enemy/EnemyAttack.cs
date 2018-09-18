@@ -21,6 +21,7 @@ public class EnemyAttack : MonoBehaviour
 
     private EnemyStates _state;
     private EnemyMovement _reach;
+    private EnemyAnimation _animation;
     private Player _player;
 
     private float _time;
@@ -30,6 +31,7 @@ public class EnemyAttack : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        _animation = GetComponent<EnemyAnimation>();
         _state = GetComponent<EnemyStates>();
         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
@@ -61,6 +63,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (!_attacked)
         {
+            Debug.Log("Add animation events to the animation");
             startAttack();
             return;
         }
@@ -77,9 +80,9 @@ public class EnemyAttack : MonoBehaviour
         if (InReach)
         {
             _player.Hit(_damage);
-            
-            GetComponent<Animator>().speed = 0;
-            Invoke("unFreezeAnimations", _freezeTime);
+
+            _animation.FreezeAnimation();
+            Invoke("UnFreezeAnimations", _freezeTime);
 
             StartCoroutine(screenShake.Shake(0.1f, 0.1f));
         }
@@ -87,7 +90,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void startAttack()
     {
-        GetComponent<Animator>().Play("EnemyAttack");
+        _animation.AttackAnimation();
         _attacking = true;
     }
 
@@ -120,9 +123,9 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    public void unFreezeAnimations()
+    public void UnFreezeAnimations()
     {
-        GetComponent<Animator>().speed = 1;
+        _animation.ResumeAnimation();
     }
 
 
