@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/_Scenes 1/Final/Narrative.unity
+=======
+- path: Assets/_Scenes/level_design.unity
+>>>>>>> a04dc278f6ee85eb7da7a988208185479e15a905
   isLoaded: 1
   isActive: 1

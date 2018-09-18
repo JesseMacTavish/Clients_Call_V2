@@ -4,17 +4,22 @@ using UnityEngine;
 
 public enum EnemyType
 {
-    DEFAULT,
-    FLYING,
-    TYPE3,
-    TYPE4,
+    IMP,
+    BAT,
+    BATVAR,
+    WRAITH,
+    WRAITHVAR,
+    MOS,
+    MOSVAR,
+    FISH,
+    FISHVAR,
 }
 
 public class EnemyTypes : MonoBehaviour
 {
     [Header("EnemyType")]
     [Tooltip("The type of the enemy (all parameters are based on this)")]
-    public EnemyType Type;
+    [SerializeField] private EnemyType _type;
 
     private Enemy _enemy;
     private EnemyAttack _enemyAttack;
@@ -25,7 +30,7 @@ public class EnemyTypes : MonoBehaviour
     private JsonEnemyTypes _enemyTypes;
 
     // Use this for initialization
-    void Awake()
+    void Start()
     {
         _enemy = GetComponent<Enemy>();
         _enemyAttack = GetComponent<EnemyAttack>();
@@ -33,7 +38,7 @@ public class EnemyTypes : MonoBehaviour
         _enemyRetreat = GetComponent<EnemyRetreat>();
 
         _enemyTypes = JsonEnemyTypes.Instance;
-        setParameters(Type);
+        setParameters(_type);
     }
 
     private void setParameters(EnemyType pType)
@@ -42,15 +47,32 @@ public class EnemyTypes : MonoBehaviour
 
         switch (pType)
         {
-            case EnemyType.DEFAULT:
-                enemyInfo = _enemyTypes.EnemyDefault.EnemyParameters;
+            case EnemyType.IMP:
+                enemyInfo = _enemyTypes.IMP.EnemyParameters;
                 break;
-            case EnemyType.FLYING:
-                enemyInfo = _enemyTypes.EnemyFlying.EnemyParameters;
+            case EnemyType.BAT:
+                enemyInfo = _enemyTypes.BAT.EnemyParameters;
                 break;
-            case EnemyType.TYPE3:
+            case EnemyType.BATVAR:
+                enemyInfo = _enemyTypes.BATVAR.EnemyParameters;
                 break;
-            case EnemyType.TYPE4:
+            case EnemyType.WRAITH:
+                enemyInfo = _enemyTypes.WRAITH.EnemyParameters;
+                break;
+            case EnemyType.WRAITHVAR:
+                enemyInfo = _enemyTypes.WRAITHVAR.EnemyParameters;
+                break;
+            case EnemyType.MOS:
+                enemyInfo = _enemyTypes.MOS.EnemyParameters;
+                break;
+            case EnemyType.MOSVAR:
+                enemyInfo = _enemyTypes.MOSVAR.EnemyParameters;
+                break;
+            case EnemyType.FISH:
+                enemyInfo = _enemyTypes.FISH.EnemyParameters;
+                break;
+            case EnemyType.FISHVAR:
+                enemyInfo = _enemyTypes.FISHVAR.EnemyParameters;
                 break;
             default:
                 break;
@@ -66,8 +88,17 @@ public class EnemyTypes : MonoBehaviour
 
         _enemyMovement.Speed = enemyInfo.Speed;
         _enemyMovement.SurroundDistance = enemyInfo.SurroundDistance;
+        _enemyMovement.CanDash = enemyInfo.CanDash;
 
         _enemyRetreat.RetreatSpeed = enemyInfo.RetreatSpeed;
         _enemyRetreat.RetreatDistance = enemyInfo.RetreatDistance;
+    }
+
+    public EnemyType CurrentType
+    {
+        get
+        {
+            return _type;
+        }
     }
 }

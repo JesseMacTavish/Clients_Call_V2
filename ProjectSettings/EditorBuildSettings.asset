@@ -5,6 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+<<<<<<< HEAD
   - enabled: 1
     path: Assets/_Scenes/level_design.unity
     guid: 1297c1ca0b688b145b5359ce864f74fd
@@ -172,4 +173,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_william/n_07_angela_2_alive_blacksmith_alive_william.unity
     guid: b48227ddb95c55645b8daee9e7751205
+=======
+  - enabled: 0
+    path: Assets/_Scenes/Dialog scene.unity
+    guid: 1b12769767adaa44cb7184f7f60df98d
+  - enabled: 0
+    path: Assets/_Scenes/SampleScene.unity
+    guid: 16f70dab5ac8f8344936868769c86e53
+  - enabled: 1
+    path: Assets/_Scenes/level_01.unity
+    guid: f94312b52fd7cae498226aec365968f0
+  - enabled: 0
+    path: Assets/_Scenes/level_02.unity
+    guid: b792bcadcc70fba4caa9f25f9be584fb
+  - enabled: 0
+    path: Assets/_Scenes/level_03.unity
+    guid: c3c53808ccd086b4f93d0c5b5a515766
+  - enabled: 0
+    path: Assets/_Scenes/level_04.unity
+    guid: 3627b3e975d6bab459a7e904f109db7b
+>>>>>>> a04dc278f6ee85eb7da7a988208185479e15a905
   m_configObjects: {}

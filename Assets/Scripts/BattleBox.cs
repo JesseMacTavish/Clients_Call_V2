@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleBox : MonoBehaviour
 {
     public GameObject wave;
+    public bool isTransition;
+
+    public Object sceneToLoad;
+
     GameObject _canvas;
     CameraFollow _camera;
 
@@ -16,11 +21,16 @@ public class BattleBox : MonoBehaviour
 
     void Update()
     {
-        if (wave.transform.childCount == 0 && _camera.GetFight)
+        if (wave.transform.childCount == 0 && _camera.GetFight && !isTransition)
         {
             _camera.StopFight();
             Destroy(gameObject);
             _canvas.transform.Find("Arrow").gameObject.SetActive(true);
+        }
+
+        if (_camera.EndOfScene)
+        {
+            SceneManager.LoadScene(sceneToLoad.name);
         }
     }
 
@@ -32,6 +42,13 @@ public class BattleBox : MonoBehaviour
             _camera.EnableInBox();
             wave.SetActive(true);
             other.GetComponent<Movement>().SetBorders();
+
+            if (isTransition)
+            {
+                _camera.StopFight();
+                _canvas.transform.Find("Arrow").gameObject.SetActive(true);
+                _camera.ActivateFinalBox();
+            }
         }
     }
 }

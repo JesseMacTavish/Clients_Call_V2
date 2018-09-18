@@ -13,6 +13,7 @@ public class EnemyRetreat : MonoBehaviour
     [Tooltip("The distance at which the enemy will stop retreating")]
     [SerializeField] private float _retreatDistance = 9;
 
+    private EnemyAnimation _animation;
     private Transform _transform;
     private EnemyStates _state;
 
@@ -25,6 +26,7 @@ public class EnemyRetreat : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        _animation = GetComponent<EnemyAnimation>();
         _transform = GetComponent<Transform>();
         _state = GetComponent<EnemyStates>();
 
@@ -58,6 +60,8 @@ public class EnemyRetreat : MonoBehaviour
 
     public void NewDirection()
     {
+        _animation.WalkAnimation();
+
         _direction = _transform.position - _playerRigidbody.position;
         _direction.z = 0;
         _direction.y = 0;

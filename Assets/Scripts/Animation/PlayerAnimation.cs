@@ -73,4 +73,14 @@ public class PlayerAnimation : MonoBehaviour
     {
         _animator.Play("PlayerIdle");
     }
+
+    public void FreezeAnimation()
+    {
+        _animator.speed = 0;
+    }
+
+    public void ResumeAnimation()
+    {
+        _animator.speed = 1;
+    }
 }

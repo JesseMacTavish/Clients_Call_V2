@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\Enemy\EnemyRetreat.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyStates.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyTypes.cs" />
+     <Compile Include="Assets\Scripts\FontFix.cs" />
      <Compile Include="Assets\Scripts\Healthbar.cs" />
      <Compile Include="Assets\Scripts\JsonParser.cs" />
      <Compile Include="Assets\Scripts\Player\Attack.cs" />

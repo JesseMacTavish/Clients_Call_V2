@@ -110,6 +110,7 @@ public class Movement : MonoBehaviour
         }
         else if (_camera.InBox)
         {
+            Debug.Log("Ama here");
             if (_rigidbody.position.x <= _leftBorder - _spriteWidth / 200f)
             {
                 _rigidbody.position = new Vector3(_leftBorder - _spriteWidth / 200f, _rigidbody.position.y, _rigidbody.position.z);
@@ -118,6 +119,11 @@ public class Movement : MonoBehaviour
             {
                 _camera.DisableInBox();
                 _canvas.transform.Find("Arrow").gameObject.SetActive(false);
+
+                if (_camera.FinalBox)
+                {
+                    _camera.ReachEndOfScene();
+                }
             }
         }
     }
