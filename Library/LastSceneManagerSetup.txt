@@ -1,8 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/_Scenes 1/Final/Narrative.unity
-=======
-- path: Assets/_Scenes/level_design.unity
->>>>>>> a04dc278f6ee85eb7da7a988208185479e15a905
+- path: Assets/_Scenes 2/n_scenes/capture_angela/save_oscar/n_07_angela_2_captured_blacksmith_captured_city
+    2.unity
   isLoaded: 1
   isActive: 1

@@ -23,6 +23,7 @@ public enum SetBool
     SACRIFICE_DAUGHTER,
     KILL_LORD,
     KILL_BOTH,
+    SAVE_BOTH,
     KILL_E_SAVE_W,
     KILL_W_SAVE_E,
     GO_ALONE,
@@ -37,7 +38,7 @@ public class DecisionTracker : MonoBehaviour
     public static float achiever;
     public static float socializer;
 
-
+    public static bool saveBoth;
     public static bool goWith;
     public static bool goAlone;
     public static bool acceptedElizabeth;
@@ -65,6 +66,9 @@ public class DecisionTracker : MonoBehaviour
     {
         switch (pSetBool)
         {
+            case SetBool.SAVE_BOTH:
+                saveBoth = true;
+                break;
             case SetBool.GO_ALONE:
                 goAlone = true;
                 break;
