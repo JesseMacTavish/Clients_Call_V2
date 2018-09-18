@@ -17,7 +17,6 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(GetFight);
         if (!InBox)
         {
             if (_freshFromTheFight)

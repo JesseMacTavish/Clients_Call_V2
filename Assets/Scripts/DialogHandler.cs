@@ -84,22 +84,6 @@ public class DialogHandler : MonoBehaviour
         }
     }
 
-    void Type()
-    {
-        _timeType += Time.deltaTime;
-        while (_timeType >= typeDelay && _typedCharacters.Length < _text.Length)
-        {
-            _typedCharacters += _text[_typedCharacters.Length];
-            _timeType = 0;
-        }
-        _dialog.text = _typedCharacters;
-
-        if (_typedCharacters.Length == _text.Length && _questionAsked)
-        {
-            ShowOptions();
-        }
-    }
-
     void Continue()
     {
         if (_typedCharacters.Length < _text.Length)
@@ -178,6 +162,23 @@ public class DialogHandler : MonoBehaviour
             _text = textLine;
         }
     }
+
+    void Type()
+    {
+        _timeType += Time.deltaTime;
+        while (_timeType >= typeDelay && _typedCharacters.Length < _text.Length)
+        {
+            _typedCharacters += _text[_typedCharacters.Length];
+            _timeType = 0;
+        }
+        _dialog.text = _typedCharacters;
+
+        if (_typedCharacters.Length == _text.Length && _questionAsked)
+        {
+            ShowOptions();
+        }
+    }
+
 
     void ShowOptions()
     {
