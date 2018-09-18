@@ -1,9 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/_Scenes/level_design.unity
-=======
-- path: Assets/_Scenes 2/n_scenes/capture_angela/save_oscar/n_07_angela_2_captured_blacksmith_captured_city
-    2.unity
->>>>>>> 41b36ab14e26446333caaf149ebf9e78a7e09e87
   isLoaded: 1
   isActive: 1
