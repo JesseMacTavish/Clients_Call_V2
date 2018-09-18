@@ -24,10 +24,13 @@ public class Enemy : MonoBehaviour
     private float _startY;
     Vector3 _oldPosition;
 
+    private EnemyAnimation _animation;
+
     void Start()
     {
         EnemyHandler.Instance.EnemySpawned(gameObject);
 
+        _animation = GetComponent<EnemyAnimation>();
         _state = GetComponent<EnemyStates>();
         _startY = transform.position.y;
     }
@@ -66,10 +69,9 @@ public class Enemy : MonoBehaviour
         }
         if (_knockBack)
         {
-
             if (_state.CurrentState != EnemyStates.EnemyState.DAMAGED && _state.CurrentState != EnemyStates.EnemyState.AIRDAMAGED)
             {
-                if (GetComponent<SpriteRenderer>().flipX)
+                if (!GetComponent<SpriteRenderer>().flipX)
                     transform.position = new Vector3(transform.position.x + _knockSpeedX, transform.position.y + _knockSpeedY, transform.position.z);
                 else
                     transform.position = new Vector3(transform.position.x - _knockSpeedX, transform.position.y + _knockSpeedY, transform.position.z);
@@ -151,6 +153,7 @@ public class Enemy : MonoBehaviour
         }
 
         _state.ChangeState(EnemyStates.EnemyState.FLYUP);
+        _animation.KnockUpAnimation();
         _knockBack = true;
         _knockSpeedX = _knockBackspeed.x;
         _knockSpeedY = _knockBackspeed.y;
@@ -216,9 +219,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void unFreezeAnimations()
+    public void UnFreezeAnimations()
     {
-        GetComponent<Animator>().speed = 1;
+        _animation.ResumeAnimation();
     }
     
 

@@ -252,7 +252,8 @@ Prefab:
         type: 2}
       propertyPath: defaultSceneToload
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 102900000, guid: 28e69d43d9b6db44a936125d8e3976e0,
+        type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogBox

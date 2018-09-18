@@ -129,17 +129,17 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: pictures.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.size
-      value: 5
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: answersScript.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
       propertyPath: m_LocalPosition.x
@@ -203,42 +203,44 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[5]
-      value: 
+      value: Elizabeth|Here we are!+1
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[6]
-      value: 
+      value: Edwin|I have never been in this church before. It looks so big.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[7]
-      value: 
+      value: William|This place stinks of desperation and rejection.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[8]
-      value: 
+      value: Elizabeth|Look! On the wall! That must be the next person to hear their
+        judgement.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[9]
-      value: 
+      value: Elizabeth|I heard she practiced black magic or something.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[10]
-      value: 
+      value: Edwin|Angela?!
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: answersScript.Array.data[0]
-      value: thanks dud
+      value: Edwin|Nothing, sir.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: answersScript.Array.data[1]
-      value: naw
+      value: Edwin|This man is a mad scientist. He was planning to murder me for experimental
+        reasons.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -278,92 +280,90 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[11]
-      value: 
+      value: William|You know this creature?
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[12]
-      value: 
+      value: 'Angela|Edwin! You gotta get away from those two!+3
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[13]
-      value: 
+      value: Angela|They are criminals! He is planning to capture you to perform one
+        of his sick experiments!
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[14]
-      value: 
+      value: 'Edwin|I betrayed you. Why would you help me? '
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[15]
-      value: William|I am a rather famous scientist specialized in organisms and plant
-        life.
+      value: Angela|You did not want to risk being caught with me.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[16]
-      value: William|Maybe you recognize me from the papers.
+      value: Angela|I knew that was a possibility when i first asked for help.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[17]
-      value: "Edwin|Now that you mention it, aren\u2019t you the man using unconventional
-        methods for your research?"
+      value: Angela|You got to trust me! Leave them behind!
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[18]
-      value: "William|\u201CUnconventional\u201D? foolishness."
+      value: William|Nonsense. We are innocent citizens.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[19]
-      value: William|We live in a society where the media tends to portray cases from
-        their worst side.
+      value: "Elizabeth|Dad-\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[20]
-      value: William|There is nothing wrong about my methods.
+      value: 'William|Quiet, Elizabeth. '
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[21]
-      value: William|...
+      value: Guard|What is going on here?%Trust William%Turn them in
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[22]
-      value: "William|Besides, wouldn\u2019t you, too, take a life to potentially
-        save thousands? "
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[23]
-      value: "\rElizabeth|Father, you are making him uncomfortable.\r\n"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[24]
-      value: "William|There, there, Elizabeth. I want to hear the man\u2019s thoughts. "
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[25]
-      value: William|So, would you take a life for a chance to save many?%Yes, I'd
-        take a life%No, that is crazy.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[26]
-      value: William|William von Kleist, yes.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[27]
-      value: William|William von Kleist, yes.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -544,7 +544,7 @@ Prefab:
         type: 2}
       propertyPath: pictures.Array.data[1]
       value: 
-      objectReference: {fileID: 1742682867}
+      objectReference: {fileID: 1106818053}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: pictures.Array.data[2]
@@ -600,6 +600,23 @@ Prefab:
       propertyPath: dialogScript.Array.data[69]
       value: William|William von Kleist, yes.
       objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: pictures.Array.data[3]
+      value: 
+      objectReference: {fileID: 1692044235}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sceneToLoad1
+      value: 
+      objectReference: {fileID: 102900000, guid: 2b6c07db47fdcfa4da9fc5047e9412b6,
+        type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sceneToLoad2
+      value: 
+      objectReference: {fileID: 102900000, guid: 11ee559a1f17d2642b9ddb253bf858f4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0
@@ -1742,6 +1759,93 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1074286609}
   m_CullTransparentMesh: 0
+--- !u!1 &1106818053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106818057}
+  - component: {fileID: 1106818056}
+  - component: {fileID: 1106818055}
+  - component: {fileID: 1106818054}
+  m_Layer: 0
+  m_Name: Church
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!64 &1106818054
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106818053}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1106818055
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106818053}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 558bed0f099277c47b2be7a285ab9625, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1106818056
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106818053}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1106818057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106818053}
+  m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: 0, y: 0, z: -0.06}
+  m_LocalScale: {x: -2.0690434, y: -0.00161644, z: -1.1638368}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &1114010576
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,6 +2241,93 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590967470}
   m_CullTransparentMesh: 0
+--- !u!1 &1692044235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692044239}
+  - component: {fileID: 1692044238}
+  - component: {fileID: 1692044237}
+  - component: {fileID: 1692044236}
+  m_Layer: 0
+  m_Name: Angela (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!64 &1692044236
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692044235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1692044237
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692044235}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 06d01b3bf7e4a8d4585b1446f5946a1e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1692044238
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692044235}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1692044239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692044235}
+  m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: 1.49, y: -1.32, z: -0.3}
+  m_LocalScale: {x: -1.2254527, y: -0.000000065515145, z: -0.9190895}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &1712648660
 GameObject:
   m_ObjectHideFlags: 0

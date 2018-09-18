@@ -1794,6 +1794,11 @@ Prefab:
       propertyPath: dialogScript.Array.size
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -1968,6 +1973,23 @@ Prefab:
       value: 
       objectReference: {fileID: 102900000, guid: ac86a8fbfdae2494bb16535e85c5cf50,
         type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[0]
+      value: William|So you would just kill an innocent baby? I doubt that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[1]
+      value: Willaim|Always going for the pacifist run, huh? It may bring you to your
+        doom.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[2]
+      value: William|Being honest I see. Even though you are letting millions of lives
+        die.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0

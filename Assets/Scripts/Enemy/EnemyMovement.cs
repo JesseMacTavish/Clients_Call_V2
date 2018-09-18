@@ -14,12 +14,16 @@ public class EnemyMovement : MonoBehaviour
     [Tooltip("The distance the enemy will stop from the target\nX = MinDistance, y = MaxDistance")]
     [SerializeField] private Vector2 _surroundDistance = new Vector2(5, 7);
 
+    [Tooltip("if true: this enemy will dash towards the player instead of normally attacking")]
+    [SerializeField] private bool _canDash = false;
+
     private static List<int> _availableDegreesRight = new List<int>() /*{ 0, 20, -20, 40, -40, 60, -60, };*/ { 60, 40, 20, 0, -20, -40, -60, };
     private static List<int> _availableDegreesLeft = new List<int>() /*{ 180, 160, 200, 140, 220, 120, 240, };*/ { 120, 140, 160, 180, 200, 220, 240, };
 
     private Transform _transform;
     private SpriteRenderer _renderer;
     private EnemyStates _state;
+    private EnemyAnimation _animation;
 
     private GameObject _player;
     private Rigidbody _playerRigidbody;
@@ -38,6 +42,7 @@ public class EnemyMovement : MonoBehaviour
         _renderer = GetComponent<SpriteRenderer>();
         _transform = GetComponent<Transform>();
         _state = GetComponent<EnemyStates>();
+        _animation = GetComponent<EnemyAnimation>();
 
         _player = GameObject.FindGameObjectWithTag("Player");
         _playerRigidbody = _player.GetComponent<Rigidbody>();
@@ -191,16 +196,16 @@ public class EnemyMovement : MonoBehaviour
     {
         if (pPlayer.x < _transform.position.x)
         {
-            if (!_renderer.flipX)
+            if (_renderer.flipX)
             {
-                _renderer.flipX = true;
+                _renderer.flipX = false;
             }
         }
         else
         {
-            if (_renderer.flipX)
+            if (!_renderer.flipX)
             {
-                _renderer.flipX = false;
+                _renderer.flipX = transform;
             }
         }
     }
@@ -213,6 +218,8 @@ public class EnemyMovement : MonoBehaviour
         _surroundedPlayer = false;
 
         newOffset();
+
+        _animation.WalkAnimation();
     }
 
     public void AddAvailableDegree()
@@ -279,6 +286,14 @@ public class EnemyMovement : MonoBehaviour
         set
         {
             _surroundDistance = value;
+        }
+    }
+    
+    public bool CanDash
+    {
+        set
+        {
+            _canDash = value;
         }
     }
 }

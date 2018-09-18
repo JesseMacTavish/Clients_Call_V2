@@ -284,6 +284,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Placeholders\testScript.cs" />
+    <Compile Include="Assets\Scripts\Animation\EnemyAnimation.cs" />
     <Compile Include="Assets\Scripts\Animation\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\ButtonScript.cs" />
     <Compile Include="Assets\Scripts\CharacterScript.cs" />
@@ -293,6 +294,7 @@
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyDamaged.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyDashing.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHandler.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyRetreat.cs" />

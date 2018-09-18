@@ -124,7 +124,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: sounds.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -233,17 +233,17 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: answersScript.Array.data[0]
-      value: Edwin|Come, william! Run!*2
+      value: Edwin|Come, william! Run!*1
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: answersScript.Array.data[1]
-      value: Edwin|Come, Elizabeth! We need to get away!*1
+      value: Edwin|(I need to get out of here!)*2
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: answersScript.Array.data[2]
-      value: Edwin|(I need to get out of here!)^*1^2
+      value: Edwin|Come, Elizabeth! We need to get away!*3
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -601,7 +601,7 @@ Prefab:
         type: 2}
       propertyPath: sceneToLoad1
       value: 
-      objectReference: {fileID: 102900000, guid: d3e3a0ab3d775ab4f9b7791d4695536b,
+      objectReference: {fileID: 102900000, guid: b48227ddb95c55645b8daee9e7751205,
         type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -617,17 +617,17 @@ Prefab:
         type: 2}
       propertyPath: sounds.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 59f6d4489dfab474e89b21c98f137474, type: 3}
+      objectReference: {fileID: 8300000, guid: 1c4f5dfc6ccd1664f8ecf3d61bf53be9, type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: sounds.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: e16cd10b0a3ac9f40944b6154df7fe15, type: 3}
+      objectReference: {fileID: 8300000, guid: 9a14904f49050e543842faac4b5cebee, type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: sounds.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 4c9f51c611de98b47847bca70d878d10, type: 3}
+      objectReference: {fileID: 8300000, guid: d6b7ba8000b494545af54d8c9cd7f196, type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: sceneToLoad3
@@ -2526,7 +2526,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b7ba6ec2fbd6c5241be1e1b9da35cfcd, type: 2}
+  - {fileID: 2100000, guid: 6c703c9d84466794dae31e5afa2eead1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

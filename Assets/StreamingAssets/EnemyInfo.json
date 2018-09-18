@@ -1,5 +1,5 @@
 ﻿{
-  "EnemyDefault":
+  "IMP":
   {
   	"EnemyParameters":
 	{
@@ -13,6 +13,7 @@
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
+		"CanDash":"false",
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
@@ -24,7 +25,7 @@
 	}
   },
 
-  "EnemyFlying":
+  "BAT":
   {
   	"EnemyParameters":
 	{
@@ -38,6 +39,189 @@
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
+		"CanDash":"false",
+		"Speed":"0.1",
+		"SurroundDistance":
+		{
+			"x":"5",
+			"y":"7"
+		},
+		"RetreatSpeed":"0.1",
+		"RetreatDistance":"9"
+	}
+  },
+
+  "BATVAR":
+  {
+  	"EnemyParameters":
+	{
+		"Health":"20",
+		"KnockBackSpeed":
+		{
+			"x":"0.25",
+			"y":"0"
+		},
+		"FlyUpSpeed":"0.2",
+		"Damage":"10",
+		"AttackRange":"2",
+		"FreezeTime":"0.1",
+		"CanDash":"false",
+		"Speed":"0.1",
+		"SurroundDistance":
+		{
+			"x":"5",
+			"y":"7"
+		},
+		"RetreatSpeed":"0.1",
+		"RetreatDistance":"9"
+	}
+  },
+
+  "WRAITH":
+  {
+  	"EnemyParameters":
+	{
+		"Health":"20",
+		"KnockBackSpeed":
+		{
+			"x":"0.25",
+			"y":"0"
+		},
+		"FlyUpSpeed":"0.2",
+		"Damage":"10",
+		"AttackRange":"2",
+		"FreezeTime":"0.1",
+		"CanDash":"false",
+		"Speed":"0.1",
+		"SurroundDistance":
+		{
+			"x":"5",
+			"y":"7"
+		},
+		"RetreatSpeed":"0.1",
+		"RetreatDistance":"9"
+	}
+  },
+  
+  "WRAITHVAR":
+  {
+  	"EnemyParameters":
+	{
+		"Health":"20",
+		"KnockBackSpeed":
+		{
+			"x":"0.25",
+			"y":"0"
+		},
+		"FlyUpSpeed":"0.2",
+		"Damage":"10",
+		"AttackRange":"2",
+		"FreezeTime":"0.1",
+		"CanDash":"false",
+		"Speed":"0.1",
+		"SurroundDistance":
+		{
+			"x":"5",
+			"y":"7"
+		},
+		"RetreatSpeed":"0.1",
+		"RetreatDistance":"9"
+	}
+  },
+
+  "MOS":
+  {
+  	"EnemyParameters":
+	{
+		"Health":"20",
+		"KnockBackSpeed":
+		{
+			"x":"0.25",
+			"y":"0"
+		},
+		"FlyUpSpeed":"0.2",
+		"Damage":"10",
+		"AttackRange":"2",
+		"FreezeTime":"0.1",
+		"CanDash":"false",
+		"Speed":"0.1",
+		"SurroundDistance":
+		{
+			"x":"5",
+			"y":"7"
+		},
+		"RetreatSpeed":"0.1",
+		"RetreatDistance":"9"
+	}
+  },
+  
+  "MOSVAR":
+  {
+  	"EnemyParameters":
+	{
+		"Health":"20",
+		"KnockBackSpeed":
+		{
+			"x":"0.25",
+			"y":"0"
+		},
+		"FlyUpSpeed":"0.2",
+		"Damage":"10",
+		"AttackRange":"2",
+		"FreezeTime":"0.1",
+		"CanDash":"false",
+		"Speed":"0.1",
+		"SurroundDistance":
+		{
+			"x":"5",
+			"y":"7"
+		},
+		"RetreatSpeed":"0.1",
+		"RetreatDistance":"9"
+	}
+  },
+
+  "FISH":
+  {
+  	"EnemyParameters":
+	{
+		"Health":"20",
+		"KnockBackSpeed":
+		{
+			"x":"0.25",
+			"y":"0"
+		},
+		"FlyUpSpeed":"0.2",
+		"Damage":"10",
+		"AttackRange":"2",
+		"FreezeTime":"0.1",
+		"CanDash":"false",
+		"Speed":"0.1",
+		"SurroundDistance":
+		{
+			"x":"5",
+			"y":"7"
+		},
+		"RetreatSpeed":"0.1",
+		"RetreatDistance":"9"
+	}
+  },
+  
+  "FISHVAR":
+  {
+  	"EnemyParameters":
+	{
+		"Health":"20",
+		"KnockBackSpeed":
+		{
+			"x":"0.25",
+			"y":"0"
+		},
+		"FlyUpSpeed":"0.2",
+		"Damage":"10",
+		"AttackRange":"2",
+		"FreezeTime":"0.1",
+		"CanDash":"false",
 		"Speed":"0.1",
 		"SurroundDistance":
 		{

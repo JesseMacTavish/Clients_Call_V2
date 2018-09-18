@@ -11,7 +11,7 @@ public class JsonParser : MonoBehaviour
     private string _path;
     public static string JsonString;
 
-    private void Awake()
+    private void Start()
     {
         _path = Application.streamingAssetsPath + "/" + FileName;
         JsonString = File.ReadAllText(_path);
@@ -21,8 +21,15 @@ public class JsonParser : MonoBehaviour
 [System.Serializable]
 public class JsonEnemyTypes
 {
-    public EnemyDefault EnemyDefault;
-    public EnemyFlying EnemyFlying;
+    public IMP IMP;
+    public BAT BAT;
+    public BATVAR BATVAR;
+    public WRAITH WRAITH;
+    public WRAITHVAR WRAITHVAR;
+    public MOS MOS;
+    public MOSVAR MOSVAR;
+    public FISH FISH;
+    public FISHVAR FISHVAR;
 
     public static JsonEnemyTypes Instance
     {
@@ -34,13 +41,55 @@ public class JsonEnemyTypes
 }
 
 [System.Serializable]
-public class EnemyDefault
+public class IMP
 {
     public EnemyParameters EnemyParameters;
 }
 
 [System.Serializable]
-public class EnemyFlying
+public class BAT
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
+public class BATVAR
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
+public class WRAITH
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
+public class WRAITHVAR
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
+public class MOS
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
+public class MOSVAR
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
+public class FISH
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
+public class FISHVAR
 {
     public EnemyParameters EnemyParameters;
 }
@@ -54,6 +103,7 @@ public class EnemyParameters
     public int Damage;
     public float AttackRange;
     public float FreezeTime;
+    public bool CanDash;
     public float Speed;
     public Vector2 SurroundDistance;
     public float RetreatSpeed;

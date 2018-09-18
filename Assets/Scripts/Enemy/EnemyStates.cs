@@ -7,7 +7,7 @@ public class EnemyStates : MonoBehaviour
     [Tooltip("The state of the enemy at the beginning")]
     [SerializeField] private EnemyState _startState = EnemyState.SURROUNDING;
 
-    private Animator _animator;
+    private EnemyAnimation _animation;
 
     public enum EnemyState
     {
@@ -24,7 +24,7 @@ public class EnemyStates : MonoBehaviour
     void Awake()
     {
         CurrentState = _startState;
-        _animator = GetComponent<Animator>();
+        _animation = GetComponent<EnemyAnimation>();
     }
 
     private void Update()
@@ -36,7 +36,7 @@ public class EnemyStates : MonoBehaviour
     public void ChangeState(EnemyState pState)
     {
         CurrentState = pState;
-        _animator.speed = 1;
+        _animation.ResumeAnimation();
 
         switch (pState)
         {
@@ -58,12 +58,12 @@ public class EnemyStates : MonoBehaviour
                 GetComponent<EnemyDamaged>().DamageAirAnimation();
                 break;
             case EnemyState.DASHING:
-
+                GetComponent<EnemyDashing>().Dash();
                 break;
             default:
                 break;
         }
-
+        
         GetComponent<EnemyMovement>().AddAvailableDegree();
     }
 

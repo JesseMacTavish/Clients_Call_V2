@@ -16,7 +16,7 @@ public class Attack : MonoBehaviour
     [Header("Just for you henrik!!!")]
     public Vector2 JUMP;
 
-    private ScreenShake _screenShake;
+    public ScreenShake screenShake;
 
     public float freezeTime = 0.1f;
     private PlayerAnimation _animation;
@@ -47,7 +47,6 @@ public class Attack : MonoBehaviour
         _enemiesInRange = new List<GameObject>();
         _trigger = GetComponent<BoxCollider>();
         _trigger.size = new Vector3(Attackrange, _trigger.size.y, Attackrange);
-        _screenShake = Camera.main.GetComponent<ScreenShake>();
     }
 
     void Update()
@@ -113,7 +112,7 @@ public class Attack : MonoBehaviour
         }
     }
 
-    private void attack()
+    private void attack() //todo: seriously, this can be easily improved
     {
         int damage = DefaultDamage;
 
@@ -126,7 +125,7 @@ public class Attack : MonoBehaviour
                 _enemiesInRange.RemoveAt(i);
             }
 
-            if (GetComponent<SpriteRenderer>().flipX)
+            if (_renderer.flipX)
             {
                 Enemy enemy = _enemiesInRange[i].GetComponent<Enemy>();
                 if (enemy.GetComponent<Transform>().position.x <= GetComponent<Rigidbody>().position.x)
@@ -137,12 +136,12 @@ public class Attack : MonoBehaviour
                         i--;
                     }
 
-                    GetComponent<Animator>().speed = 0;
-                    enemy.GetComponent<Animator>().speed = 0;
-                    Invoke("unFreezeAnimations", freezeTime);
-                    enemy.Invoke("unFreezeAnimations", freezeTime);
+                    _animation.FreezeAnimation();
+                    enemy.GetComponent<EnemyAnimation>().FreezeAnimation();
+                    Invoke("UnFreezeAnimations", freezeTime);
+                    enemy.Invoke("UnFreezeAnimations", freezeTime);
 
-                    StartCoroutine(_screenShake.Shake(0.1f, 0.03f));
+                    StartCoroutine(screenShake.Shake(0.1f, 0.03f));
                 }
             }
             else
@@ -156,12 +155,12 @@ public class Attack : MonoBehaviour
                         i--;
                     }
 
-                    GetComponent<Animator>().speed = 0;
-                    enemy.GetComponent<Animator>().speed = 0;
-                    Invoke("unFreezeAnimations", freezeTime);
-                    enemy.Invoke("unFreezeAnimations", freezeTime);
+                    _animation.FreezeAnimation();
+                    enemy.GetComponent<EnemyAnimation>().FreezeAnimation();
+                    Invoke("UnFreezeAnimations", freezeTime);
+                    enemy.Invoke("UnFreezeAnimations", freezeTime);
 
-                    StartCoroutine(_screenShake.Shake(0.1f, 0.03f));
+                    StartCoroutine(screenShake.Shake(0.1f, 0.03f));
                 }
             }
         }
@@ -250,16 +249,16 @@ public class Attack : MonoBehaviour
         for (int i = 0; i < _enemiesInRange.Count; i++)
         {
             Enemy enemy = _enemiesInRange[i].GetComponent<Enemy>();
-            if (GetComponent<SpriteRenderer>().flipX)
+            if (_renderer.flipX)
             {
-                if (enemy.GetComponent<Transform>().position.x <= GetComponent<Rigidbody>().position.x)
+                if (enemy.GetComponent<Transform>().position.x <= _rigidbody.position.x)
                 {
                     enemies.Add(enemy);
                 }
             }
             else
             {
-                if (enemy.GetComponent<Transform>().position.x >= GetComponent<Rigidbody>().position.x)
+                if (enemy.GetComponent<Transform>().position.x >= _rigidbody.position.x)
                 {
                     enemies.Add(enemy);
                 }
@@ -269,8 +268,8 @@ public class Attack : MonoBehaviour
         return enemies;
     }
 
-    public void unFreezeAnimations()
+    public void UnFreezeAnimations()
     {
-        GetComponent<Animator>().speed = 1;
+        _animation.ResumeAnimation();
     }
 }
