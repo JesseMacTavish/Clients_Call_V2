@@ -29,14 +29,7 @@ public class DialogResolution : MonoBehaviour
     {
         _dialog = dialogBox.GetComponentInChildren<Text>();
 
-        if (true)
-        {
-            dialogScript.Add("There once was a castle filled with life.");
-        }
-        if (true)
-        {
-            dialogScript.Add("All was good and all was were happy.");
-        }
+        
        
 
         dialogScript.Add("Until the King killed all he could.");
