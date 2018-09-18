@@ -17,8 +17,9 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(GetFight);
         if (!InBox)
-        {          
+        {
             if (_freshFromTheFight)
             {
                 _cameraPos.x += speed;
@@ -35,8 +36,8 @@ public class CameraFollow : MonoBehaviour
                 _cameraPos.x = _player.transform.position.x;
                 transform.position = _cameraPos;
             }
-        }        
-    }    
+        }
+    }
 
     public void StartFight()
     {
@@ -59,6 +60,18 @@ public class CameraFollow : MonoBehaviour
         _freshFromTheFight = true;
     }
 
+    public void ActivateFinalBox()
+    {
+        FinalBox = true;
+    }
+
+    public void ReachEndOfScene()
+    {
+        EndOfScene = true;
+    }
+
     public bool GetFight { get; private set; }
     public bool InBox { get; private set; }
+    public bool FinalBox { get; private set; }
+    public bool EndOfScene { get; private set; }
 }

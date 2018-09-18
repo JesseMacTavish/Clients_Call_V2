@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/level_design.unity
     guid: 1297c1ca0b688b145b5359ce864f74fd
+  - enabled: 1
+    path: Assets/_Scenes/Dialog scene.unity
+    guid: 73bace38e88c1e34497f2331fab19711
