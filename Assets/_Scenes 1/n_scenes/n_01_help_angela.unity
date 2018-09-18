@@ -239,13 +239,252 @@ MonoBehaviour:
   dialogBox: {fileID: 1712648660}
   optionsBox: {fileID: 861312694}
   sliders: {fileID: 791136214}
+  audioSource: {fileID: 0}
   ammountOfOptions: 3
   timedDecision: 1
   givenTime: 10
-  goToOtherScene: 0
+  talkToOtherCharacter: 0
+  otherCharacter: {fileID: 0}
   dialogScript: []
   answersScript: []
+  pictures: []
+  sounds: []
   typeDelay: 0.03
+  defaultSceneToload: {fileID: 0}
+  sceneToLoad1: {fileID: 0}
+  sceneToLoad2: {fileID: 0}
+  sceneToLoad3: {fileID: 0}
+  Op1: 0
+  Op2: 0
+  Op3: 0
+--- !u!1001 &95407783
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[1]
+      value: Edwin|What is this one for? *0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[2]
+      value: 'Angela|DON''T touch that!!
+
+        angry demon face))))))))))))'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[3]
+      value: "Edwin|AHH! \u2026 I was just \u2026 My apologies!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[4]
+      value: Edwin|(What just happened? She looks almost demonic. Am i having visions
+        again?)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[5]
+      value: "Angela|I didn't mean to frighten you, sir. I just don\u2019t like people
+        touching my stuff."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[6]
+      value: 'Guard|Hey, you two! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[7]
+      value: "Angela| Whispering: Oh no, it\u2019s the guard! If they find out what
+        we are doing, they will surely arrest us!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[8]
+      value: 'Guard|You, slob. what is going on here? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[9]
+      value: Edwin|(If i tell the truth, Angela will be killed!... but if I lie to
+        the guards and they find out, I will be locked up!)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[10]
+      value: "Guard|Did you not hear me? I asked what\u2019s going on!%Keep her secret%Expose
+        witch"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[0]
+      value: "Angela|\u2026 And now for the last ingredient."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 1712648660}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: optionsBox
+      value: 
+      objectReference: {fileID: 861312694}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sliders
+      value: 
+      objectReference: {fileID: 791136214}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1765700190}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[1]
+      value: "Edwin|We found this boiling cauldron in the woods. The witch must have
+        heard us and ran away.\r^Guard|Ah, alright. Get out of my way now.^Edwin|Edwin
+        in his mind: I just broke the law. if anyone finds out about this, they will
+        throw me in jail as well, and i will never get to save my Emily\n\r\nguard:
+        ah, alright. get out of my way now.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[2]
+      value: Being honest I see. Even though you are letting millions of lives die.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[0]
+      value: 'Guard|Just as we thought. you will be coming with us, hag.^Angela|No!
+        I trusted you! demonicface)))))))))))
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[11]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[12]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[13]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[14]
+      value: "Angela|\u2026 And now for the last ingredient."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 123bb2c01d9750240ba993e6560a08cd, type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: givenTime
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sceneToLoad1
+      value: 
+      objectReference: {fileID: 102900000, guid: e73622b60420c81469ba6c608af9af49,
+        type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sceneToLoad2
+      value: 
+      objectReference: {fileID: 102900000, guid: 8e3d3bfdb8b1ec446b5582a37fb2983d,
+        type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: ammountOfOptions
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sceneToLoad3
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: Op1
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: Op2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: Op3
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &149807899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,6 +1794,217 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1714551238}
   m_CullTransparentMesh: 0
+--- !u!1 &1765700189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765700191}
+  - component: {fileID: 1765700190}
+  m_Layer: 0
+  m_Name: AudioSoucre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1765700190
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1765700189}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1765700191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1765700189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1791717843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791717847}
+  - component: {fileID: 1791717846}
+  - component: {fileID: 1791717845}
+  - component: {fileID: 1791717844}
+  m_Layer: 0
+  m_Name: Angela
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1791717844
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791717843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1791717845
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791717843}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 06d01b3bf7e4a8d4585b1446f5946a1e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1791717846
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791717843}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1791717847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791717843}
+  m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: 4.2, y: -1, z: -1}
+  m_LocalScale: {x: -1.213872, y: 0.00006960631, z: -0.91040397}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &1793687189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,7 +2039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 200, y: 0}
   m_SizeDelta: {x: 160, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793687191
@@ -1701,7 +2151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947517686
@@ -1791,7 +2241,7 @@ GameObject:
   - component: {fileID: 1953225848}
   - component: {fileID: 1953225847}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
