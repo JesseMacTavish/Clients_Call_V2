@@ -110,7 +110,6 @@ public class Movement : MonoBehaviour
         }
         else if (_camera.InBox)
         {
-            Debug.Log("Ama here");
             if (_rigidbody.position.x <= _leftBorder - _spriteWidth / 200f)
             {
                 _rigidbody.position = new Vector3(_leftBorder - _spriteWidth / 200f, _rigidbody.position.y, _rigidbody.position.z);

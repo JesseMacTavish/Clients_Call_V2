@@ -97,15 +97,24 @@ public class FISHVAR
 [System.Serializable]
 public class EnemyParameters
 {
+    public bool KnockUpImmune;
+
     public int Health;
     public Vector2 KnockBackSpeed;
     public float FlyUpSpeed;
+
     public int Damage;
     public float AttackRange;
     public float FreezeTime;
-    public bool CanDash;
+
     public float Speed;
     public Vector2 SurroundDistance;
+    public bool CanDash;
+    public float DashRange;
+
+    public int DashFrames;
+    public float DashStopDistance;
+
     public float RetreatSpeed;
     public float RetreatDistance;
 }

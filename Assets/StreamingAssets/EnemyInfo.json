@@ -3,6 +3,8 @@
   {
   	"EnemyParameters":
 	{
+		"KnockUpImmnune":"0",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -10,16 +12,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"false",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -29,6 +38,8 @@
   {
   	"EnemyParameters":
 	{
+		"KnockUpImmnune":"0",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -36,16 +47,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"false",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -55,6 +73,8 @@
   {
   	"EnemyParameters":
 	{
+		"KnockUpImmnune":"0",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -62,16 +82,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"false",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -81,6 +108,8 @@
   {
   	"EnemyParameters":
 	{
+		"KnockUpImmnune":"0",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -88,16 +117,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"1",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -105,8 +141,10 @@
   
   "WRAITHVAR":
   {
-  	"EnemyParameters":
+	"EnemyParameters":
 	{
+		"KnockUpImmnune":"0",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -114,16 +152,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"1",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -131,8 +176,10 @@
 
   "MOS":
   {
-  	"EnemyParameters":
+	"EnemyParameters":
 	{
+		"KnockUpImmnune":"0",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -140,16 +187,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"false",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -157,8 +211,10 @@
   
   "MOSVAR":
   {
-  	"EnemyParameters":
+	"EnemyParameters":
 	{
+		"KnockUpImmnune":"0",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -166,16 +222,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"false",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -185,6 +248,8 @@
   {
   	"EnemyParameters":
 	{
+		"KnockUpImmnune":"1",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -192,16 +257,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"false",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
@@ -211,6 +283,8 @@
   {
   	"EnemyParameters":
 	{
+		"KnockUpImmnune":"1",
+
 		"Health":"20",
 		"KnockBackSpeed":
 		{
@@ -218,16 +292,23 @@
 			"y":"0"
 		},
 		"FlyUpSpeed":"0.2",
+
 		"Damage":"10",
 		"AttackRange":"2",
 		"FreezeTime":"0.1",
-		"CanDash":"false",
+
 		"Speed":"0.1",
 		"SurroundDistance":
 		{
 			"x":"5",
 			"y":"7"
 		},
+		"CanDash":"false",
+		"DashRange":"4",
+
+		"DashFrames":"13",
+		"DashStopDistance":"4",
+
 		"RetreatSpeed":"0.1",
 		"RetreatDistance":"9"
 	}
