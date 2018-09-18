@@ -6,9 +6,9 @@ public class Movement : MonoBehaviour
 {
     public float _speed = 0.75f;
 
+    GameObject _canvas;
+    CameraFollow _camera;
     private Vector3 _velocity;
-    private Camera mainCamera;
-    private Vector3 cameraPos;
     private SpriteRenderer _renderer;
     private Rigidbody _rigidbody;
     private PlayerAnimation _animation;
@@ -17,23 +17,30 @@ public class Movement : MonoBehaviour
     private Vector3 verticalMovement;
     private bool _isJumping;
 
+    float _spriteWidth;
+    float _leftBorder;
+    float _rightBorder;
+
     // Use this for initialization
     void Start()
     {
         _velocity = new Vector3(0, 0);
-        mainCamera = Camera.main;
-        cameraPos = mainCamera.transform.position;
         _renderer = GetComponent<SpriteRenderer>();
         _rigidbody = GetComponent<Rigidbody>();
         _animation = GetComponent<PlayerAnimation>();
 
         horizontalMovement = new Vector3(_speed, 0);
         verticalMovement = new Vector3(0, 0, _speed * 3.5f);
+       
+        _spriteWidth = 307f / 2; //Half of the player sprite width
+        
+        _canvas = GameObject.FindGameObjectWithTag("Canvas");
+        _camera = Camera.main.GetComponent<CameraFollow>();
     }
 
     // Update is called once per frame
     private void FixedUpdate()
-    {
+    {        
         if (!_animation.IsAttacking)
         {
             if (Input.GetAxisRaw("Horizontal") == 1)
@@ -51,6 +58,10 @@ public class Movement : MonoBehaviour
                 }
             }
         }
+
+        CheckColisionBorder();
+
+        //_rigidbody.velocity = Vector3.zero;
 
         _velocity += Input.GetAxisRaw("Horizontal") * horizontalMovement;
         _velocity += Input.GetAxisRaw("Vertical") * verticalMovement;
@@ -76,14 +87,50 @@ public class Movement : MonoBehaviour
             _velocity *= _speed * 2.5f;
         }
 
-        cameraPos.x = _rigidbody.position.x;
-        mainCamera.transform.position = cameraPos;
-
         if (!_animation.IsAttacking)
         {
-            _rigidbody.velocity += _velocity;
+            _rigidbody.velocity = _velocity;
         }
 
         _velocity.Set(0, 0, 0);
+    }
+
+    void CheckColisionBorder()
+    {
+        if (_camera.GetFight)
+        {
+            if (_rigidbody.position.x <= _leftBorder - _spriteWidth / 200f)
+            {
+                _rigidbody.position = new Vector3(_leftBorder - _spriteWidth / 200f, _rigidbody.position.y, _rigidbody.position.z);
+            }
+            if (_rigidbody.position.x >= _rightBorder + _spriteWidth / 200f)
+            {
+                _rigidbody.position = new Vector3(_rightBorder + _spriteWidth / 200f, _rigidbody.position.y, _rigidbody.position.z);
+            }
+        }
+        else if (_camera.InBox)
+        {
+            Debug.Log("Ama here");
+            if (_rigidbody.position.x <= _leftBorder - _spriteWidth / 200f)
+            {
+                _rigidbody.position = new Vector3(_leftBorder - _spriteWidth / 200f, _rigidbody.position.y, _rigidbody.position.z);
+            }
+            if (_rigidbody.position.x >= _rightBorder + _spriteWidth / 200f)
+            {
+                _camera.DisableInBox();
+                _canvas.transform.Find("Arrow").gameObject.SetActive(false);
+
+                if (_camera.FinalBox)
+                {
+                    _camera.ReachEndOfScene();
+                }
+            }
+        }
+    }
+
+    public void SetBorders()
+    {
+        _leftBorder = _rigidbody.position.x - _canvas.GetComponent<RectTransform>().rect.width / 200f;
+        _rightBorder = _rigidbody.position.x + _canvas.GetComponent<RectTransform>().rect.width / 200f;
     }
 }
