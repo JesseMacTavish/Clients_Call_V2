@@ -3851,6 +3851,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &401461584 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114111927805581788, guid: 5874098544f1c1b4d925cfc6acf10170,
+    type: 2}
+  m_PrefabInternal: {fileID: 1987728564}
+  m_Script: {fileID: 11500000, guid: 069875fdb691a2d4a8e8086b35e62c96, type: 3}
 --- !u!1 &410719098
 GameObject:
   m_ObjectHideFlags: 0
@@ -4940,6 +4946,8 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669908}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5020,6 +5028,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c52b387d1ee66340b3d30938ab4f780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b5884e1a95bac48af8ef674fd10fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80f4e9d77e4c514ea5b2eed9bec39fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FileName: EnemyInfo.json
 --- !u!1001 &541748930
 Prefab:
   m_ObjectHideFlags: 0
@@ -16751,7 +16783,7 @@ Prefab:
         type: 2}
       propertyPath: _healthbar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 401461584}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e, type: 2}
   m_IsPrefabAsset: 0
@@ -17409,6 +17441,36 @@ Prefab:
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224830765385418270, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.986
+      objectReference: {fileID: 0}
+    - target: {fileID: 224830765385418270, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.986
+      objectReference: {fileID: 0}
+    - target: {fileID: 224830765385418270, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.986
+      objectReference: {fileID: 0}
+    - target: {fileID: 224830765385418270, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -152
+      objectReference: {fileID: 0}
+    - target: {fileID: 224830765385418270, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 114304665780004642, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5874098544f1c1b4d925cfc6acf10170, type: 2}

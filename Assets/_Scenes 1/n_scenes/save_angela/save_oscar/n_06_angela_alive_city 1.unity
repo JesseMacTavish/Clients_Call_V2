@@ -239,13 +239,24 @@ MonoBehaviour:
   dialogBox: {fileID: 1712648660}
   optionsBox: {fileID: 861312694}
   sliders: {fileID: 791136214}
+  audioSource: {fileID: 0}
   ammountOfOptions: 3
   timedDecision: 1
   givenTime: 10
-  goToOtherScene: 0
+  talkToOtherCharacter: 0
+  otherCharacter: {fileID: 0}
   dialogScript: []
   answersScript: []
+  pictures: []
+  sounds: []
   typeDelay: 0.03
+  defaultSceneToload: {fileID: 0}
+  sceneToLoad1: {fileID: 0}
+  sceneToLoad2: {fileID: 0}
+  sceneToLoad3: {fileID: 0}
+  Op1: 0
+  Op2: 0
+  Op3: 0
 --- !u!1 &149807899
 GameObject:
   m_ObjectHideFlags: 0

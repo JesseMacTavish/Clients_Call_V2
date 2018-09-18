@@ -24,7 +24,7 @@ public class DialogHandler : MonoBehaviour
     Text _dialog;
     Text _name;
     string[] _fullTextOptions;
-    int _dialogBoxID;
+    int _dialogBoxID = -1;
     bool _optionsOn;
     bool _questionAsked;
 
@@ -62,9 +62,7 @@ public class DialogHandler : MonoBehaviour
     {
         _dialog = dialogBox.GetComponentInChildren<Text>();
         _name = dialogBox.transform.Find("Name").GetComponent<Text>();
-        string[] script = dialogScript[0].Split('|');
-        _name.text = script[0];
-        _text = script[1];
+        Continue();
 
         optionsAction.Add(Option1);
         optionsAction.Add(Option2);
