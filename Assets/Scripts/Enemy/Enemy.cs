@@ -102,6 +102,11 @@ public class Enemy : MonoBehaviour
 
     public bool Hit(int pDamage)
     {
+        if (_state.CurrentState == EnemyStates.EnemyState.DEAD)
+        {
+            return false;
+        }
+
         CancelInvoke();
 
         if (_state.CurrentState == EnemyStates.EnemyState.FLYUP || _state.CurrentState == EnemyStates.EnemyState.AIRDAMAGED)
@@ -118,7 +123,7 @@ public class Enemy : MonoBehaviour
 
         if (_health <= 0)
         {
-            die();
+            startDying();
             return true;
         }
 
@@ -137,7 +142,7 @@ public class Enemy : MonoBehaviour
 
     public void Fly()
     {
-        if (_knockUpImmune || _state.CurrentState == EnemyStates.EnemyState.FLYUP)
+        if (_knockUpImmune || _state.CurrentState == EnemyStates.EnemyState.FLYUP || _state.CurrentState == EnemyStates.EnemyState.DEAD)
         {
             return;
         }
@@ -150,7 +155,7 @@ public class Enemy : MonoBehaviour
 
     public void KnockBack()
     {
-        if (_state.CurrentState != EnemyStates.EnemyState.FLYUP && _state.CurrentState != EnemyStates.EnemyState.AIRDAMAGED)
+        if ((_state.CurrentState != EnemyStates.EnemyState.FLYUP && _state.CurrentState != EnemyStates.EnemyState.AIRDAMAGED) || _state.CurrentState == EnemyStates.EnemyState.DEAD)
         {
             return;
         }
@@ -186,6 +191,12 @@ public class Enemy : MonoBehaviour
                 Instantiate(slash, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.1f), Quaternion.identity);
                 break;
         }
+    }
+
+    private void startDying()
+    {
+        _state.ChangeState(EnemyStates.EnemyState.DEAD);
+        _animation.DeathAnimation();
     }
 
     private void die()

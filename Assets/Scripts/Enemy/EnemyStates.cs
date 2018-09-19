@@ -19,6 +19,7 @@ public class EnemyStates : MonoBehaviour
         FLYUP,
         AIRDAMAGED,
         DASHING,
+        DEAD,
     }
 
     void Awake()
@@ -59,6 +60,8 @@ public class EnemyStates : MonoBehaviour
                 break;
             case EnemyState.DASHING:
                 GetComponent<EnemyDashing>().Dash();
+                break;
+            case EnemyState.DEAD:
                 break;
             default:
                 break;
