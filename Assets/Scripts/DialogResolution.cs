@@ -17,8 +17,6 @@ public class DialogResolution : MonoBehaviour
 
     public UnityEngine.Object defaultSceneToload;
 
-    private Dictionary<int, string> test;
-
     Text _dialog;
     int _dialogBoxID = -1;
     //Variables for slow type

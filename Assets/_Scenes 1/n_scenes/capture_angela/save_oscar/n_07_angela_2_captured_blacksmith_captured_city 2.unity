@@ -756,6 +756,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -2547,7 +2548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1757525082
 MeshCollider:
   m_ObjectHideFlags: 0
