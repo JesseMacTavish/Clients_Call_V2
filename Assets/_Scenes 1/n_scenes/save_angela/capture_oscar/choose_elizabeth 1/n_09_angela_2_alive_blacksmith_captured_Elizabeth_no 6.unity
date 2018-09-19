@@ -637,6 +637,12 @@ Prefab:
       propertyPath: pictures.Array.data[3]
       value: 
       objectReference: {fileID: 413471150}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: defaultSceneToLoad
+      value: 
+      objectReference: {fileID: 102900000, guid: b211bb5a19c405b48853b16a6dafb688,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0
@@ -776,6 +782,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}

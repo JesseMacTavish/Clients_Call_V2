@@ -606,7 +606,7 @@ Prefab:
         type: 2}
       propertyPath: sceneToLoad1
       value: 
-      objectReference: {fileID: 102900000, guid: b7f58246cbd61ee40bee63154310d358,
+      objectReference: {fileID: 102900000, guid: a5ac0ddd793f6314cb3038198724e0df,
         type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -777,6 +777,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}

@@ -7,8 +7,8 @@ public class BattleBox : MonoBehaviour
 {
     public GameObject wave;
     public bool isTransition;
-
     public Object sceneToLoad;
+    public GameObject afterTalk;
 
     GameObject _canvas;
     CameraFollow _camera;
@@ -24,7 +24,12 @@ public class BattleBox : MonoBehaviour
         if (wave.transform.childCount == 0 && _camera.GetFight && !isTransition)
         {
             _camera.StopFight();
-            Destroy(gameObject);
+
+            if (afterTalk != null)
+            {
+                afterTalk.SetActive(true);
+            }
+
             _canvas.transform.Find("Arrow").gameObject.SetActive(true);
         }
 

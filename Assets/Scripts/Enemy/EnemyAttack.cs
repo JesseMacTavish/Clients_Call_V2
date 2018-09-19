@@ -17,11 +17,17 @@ public class EnemyAttack : MonoBehaviour
     [Tooltip("The time IN SECONDS that the enemy will be frozen")]
     [SerializeField] private float _freezeTime = 0.1f;
 
-    public ScreenShake screenShake;
+    [HideInInspector] public ScreenShake ScreenShake;
+
+    [Space(10)]
+    public GameObject Projectile;
 
     private EnemyStates _state;
-    private EnemyMovement _reach;
+    private EnemyMovement _enemyMovement;
     private EnemyAnimation _animation;
+    private EnemyTypes _enemyTypes;
+    private SpriteRenderer _renderer;
+
     private Player _player;
 
     private float _time;
@@ -33,10 +39,12 @@ public class EnemyAttack : MonoBehaviour
     {
         _animation = GetComponent<EnemyAnimation>();
         _state = GetComponent<EnemyStates>();
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        _enemyMovement = GetComponent<EnemyMovement>();
+        _enemyTypes = GetComponent<EnemyTypes>();
+        _renderer = GetComponent<SpriteRenderer>();
 
-        BoxCollider trigger = GetComponent<BoxCollider>();
-        trigger.size = new Vector3(_attackrange, trigger.size.y, _attackrange);
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        ScreenShake = Camera.main.GetComponent<ScreenShake>();
     }
 
     // Update is called once per frame
@@ -63,7 +71,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (!_attacked)
         {
-            Debug.Log("Add animation events to the animation");
             startAttack();
             return;
         }
@@ -77,6 +84,14 @@ public class EnemyAttack : MonoBehaviour
         _attacked = true;
         _attacking = false;
 
+        if (_enemyMovement.CanShoot)
+        {
+            Instantiate(Projectile, transform.position, Quaternion.identity).GetComponent<MoveProjectile>().Damage = Damage;
+            return;
+        }
+
+        moveForward();
+
         if (InReach)
         {
             _player.Hit(_damage);
@@ -84,7 +99,7 @@ public class EnemyAttack : MonoBehaviour
             _animation.FreezeAnimation();
             Invoke("UnFreezeAnimations", _freezeTime);
 
-            StartCoroutine(screenShake.Shake(0.1f, 0.1f));
+            StartCoroutine(ScreenShake.Shake(0.1f, 0.1f));
         }
     }
 
@@ -92,6 +107,37 @@ public class EnemyAttack : MonoBehaviour
     {
         _animation.AttackAnimation();
         _attacking = true;
+    }
+
+    private void moveForward()
+    {
+        switch (_enemyTypes.CurrentType)
+        {
+            case EnemyType.IMP:
+                break;
+            case EnemyType.BAT:
+            case EnemyType.BATVAR:
+                break;
+            case EnemyType.WRAITH:
+            case EnemyType.WRAITHVAR:
+                break;
+            case EnemyType.MOS:
+            case EnemyType.MOSVAR:
+                break;
+            case EnemyType.FISH:
+            case EnemyType.FISHVAR:
+                if (_renderer.flipX)
+                {
+                    transform.position += new Vector3(0.5f, 0, 0);
+                }
+                else
+                {
+                    transform.position += new Vector3(-0.5f, 0, 0);
+                }
+                break;
+            default:
+                break;
+        }
     }
 
     private EnemyStates.EnemyState randomState()
@@ -132,6 +178,10 @@ public class EnemyAttack : MonoBehaviour
     //Parameters:
     public int Damage
     {
+        get
+        {
+            return _damage;
+        }
         set
         {
             _damage = value;
@@ -152,6 +202,10 @@ public class EnemyAttack : MonoBehaviour
 
     public float FreezeTime
     {
+        get
+        {
+            return _freezeTime;
+        }
         set
         {
             _freezeTime = value;
