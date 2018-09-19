@@ -30,6 +30,11 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
+    public void JumpAnimation()
+    {
+        _animator.Play("PlayerJump");
+    }
+
     public bool IsAttacking
     {
         get

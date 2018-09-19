@@ -30,6 +30,7 @@ public class JsonEnemyTypes
     public MOSVAR MOSVAR;
     public FISH FISH;
     public FISHVAR FISHVAR;
+    public JOKER JOKER;
 
     public static JsonEnemyTypes Instance
     {
@@ -95,6 +96,12 @@ public class FISHVAR
 }
 
 [System.Serializable]
+public class JOKER
+{
+    public EnemyParameters EnemyParameters;
+}
+
+[System.Serializable]
 public class EnemyParameters
 {
     public bool KnockUpImmune;
@@ -106,11 +113,11 @@ public class EnemyParameters
     public int Damage;
     public float AttackRange;
     public float FreezeTime;
-    public bool CanShoot;
 
     public float Speed;
     public Vector2 SurroundDistance;
     public bool CanDash;
+    public bool CanShoot;
 
     public int DashFrames;
     public float DashStopDistance;
