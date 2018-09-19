@@ -264,33 +264,6 @@ public class EnemyMovement : MonoBehaviour
         _degrees = int.MaxValue;
     }
 
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            List<GameObject> enemies = other.GetComponent<Attack>().EnemiesInRange;
-
-            if (!enemies.Contains(gameObject))
-            {
-                enemies.Add(gameObject);
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            if (Vector3.Distance(transform.position, _playerRigidbody.position) < 2)
-            {
-                return;
-            }
-            other.GetComponent<Attack>().EnemiesInRange.Remove(gameObject);
-        }
-    }
-
-
     //Parameters:
     public float Speed
     {

@@ -23,12 +23,13 @@ public class BattleBox : MonoBehaviour
     {
         if (wave.transform.childCount == 0 && _camera.GetFight && !isTransition)
         {
-            _camera.StopFight();
-
             if (afterTalk != null)
             {
                 afterTalk.SetActive(true);
             }
+
+            _camera.StopFight();
+
 
             _canvas.transform.Find("Arrow").gameObject.SetActive(true);
         }
