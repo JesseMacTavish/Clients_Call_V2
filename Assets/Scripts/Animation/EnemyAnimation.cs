@@ -78,15 +78,30 @@ public class EnemyAnimation : MonoBehaviour
         }
     }
 
+    private void walkSound()
+    {
+        //_audioSource.PlayOneShot(_audioClips[0]);
+    }
+
+    private void attackSound()
+    {
+        //_audioSource.PlayOneShot(_audioClips[1]);
+    }
+
+    private void deathSound()
+    {
+        //_audioSource.PlayOneShot(_audioClips[2]);
+    }
+
     public void WalkAnimation()
     {
-        _audioSource.PlayOneShot(_audioClips[0]);
+        walkSound();
         _animator.Play(_type + "Walk");
     }
 
     public void AttackAnimation()
     {
-        _audioSource.PlayOneShot(_audioClips[1]);
+        attackSound();
         _animator.Play(_type + "Attack");
     }
 
@@ -107,10 +122,9 @@ public class EnemyAnimation : MonoBehaviour
 
     public void DeathAnimation()
     {
-        _audioSource.PlayOneShot(_audioClips[2]);
+        deathSound();
         _animator.Play(_type + "Death");
     }
-
 
     public void FreezeAnimation()
     {
