@@ -4,11 +4,11 @@
 		<name>mscorlib</name>
 	</assembly>
 	<members>
-		<member name="T:System.Array">
-			<summary>Arrays allow you to store multiple objects in a single variable.</summary>
-		</member>
 		<member name="T:System.String">
 			<summary>Represents text as a series of Unicode characters.</summary>
+		</member>
+		<member name="T:System.Array">
+			<summary>Arrays allow you to store multiple objects in a single variable.</summary>
 		</member>
 		<member name="P:System.Array.Length">
 			<summary>The length property of the array that returns or sets the number of elements in array.</summary>
@@ -76,9 +76,6 @@
 		<member name="M:System.Object.ToString()">
 			<summary>Returns the name of the GameObject.</summary>
 		</member>
-		<member name="T:System.Random">
-			<summary>Class for generating random data.</summary>
-		</member>
 		<member name="T:System.IO.Path">
 			<summary>Performs operations on strings that contain file or directory path information.</summary>
 		</member>
@@ -96,6 +93,9 @@
 		</member>
 		<member name="M:System.IO.Path.GetFileNameWithoutExtension(System.String)">
 			<summary>Returns the file base component of the specified path string without the extension.</summary>
+		</member>
+		<member name="T:System.Random">
+			<summary>Class for generating random data.</summary>
 		</member>
 		<member name="T:System.Collections.Hashtable">
 			<summary>You can use a Hashtable to store key+value pairs.</summary>

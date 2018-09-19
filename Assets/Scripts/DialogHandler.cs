@@ -45,6 +45,7 @@ public class DialogHandler : MonoBehaviour
     string _typedCharacters = "";
 
     [Header("Scenes to load")]
+    public UnityEngine.Object defaultSceneToLoad;
     public UnityEngine.Object sceneToLoad1;
     public UnityEngine.Object sceneToLoad2;
     public UnityEngine.Object sceneToLoad3;
@@ -83,22 +84,6 @@ public class DialogHandler : MonoBehaviour
         }
     }
 
-    void Type()
-    {
-        _timeType += Time.deltaTime;
-        while (_timeType >= typeDelay && _typedCharacters.Length < _text.Length)
-        {
-            _typedCharacters += _text[_typedCharacters.Length];
-            _timeType = 0;
-        }
-        _dialog.text = _typedCharacters;
-
-        if (_typedCharacters.Length == _text.Length && _questionAsked)
-        {
-            ShowOptions();
-        }
-    }
-
     void Continue()
     {
         if (_typedCharacters.Length < _text.Length)
@@ -130,6 +115,10 @@ public class DialogHandler : MonoBehaviour
                 else if (_op3)
                 {
                     SceneManager.LoadScene(sceneToLoad3.name);
+                }
+                else
+                {
+                    SceneManager.LoadScene(defaultSceneToLoad.name);
                 }
             }
             else
@@ -174,6 +163,23 @@ public class DialogHandler : MonoBehaviour
         }
     }
 
+    void Type()
+    {
+        _timeType += Time.deltaTime;
+        while (_timeType >= typeDelay && _typedCharacters.Length < _text.Length)
+        {
+            _typedCharacters += _text[_typedCharacters.Length];
+            _timeType = 0;
+        }
+        _dialog.text = _typedCharacters;
+
+        if (_typedCharacters.Length == _text.Length && _questionAsked)
+        {
+            ShowOptions();
+        }
+    }
+
+
     void ShowOptions()
     {
         for (int i = 0; i < ammountOfOptions; i++)
@@ -195,7 +201,7 @@ public class DialogHandler : MonoBehaviour
         }
 
         _optionsOn = true;
-        _questionAsked = false;        
+        _questionAsked = false;
     }
 
     protected void CloseOptions()

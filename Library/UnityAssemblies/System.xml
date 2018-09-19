@@ -10,15 +10,6 @@
 		<member name="T:System.Diagnostics.Debug">
 			<summary>Class containing methods to ease debugging while developing a game.</summary>
 		</member>
-		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean)">
-			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
-		</member>
-		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String)">
-			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
-		</member>
-		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)">
-			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
-		</member>
 		<member name="T:System.ComponentModel.AsyncOperation">
 			<summary>Asynchronous operation coroutine.</summary>
 		</member>
@@ -27,6 +18,15 @@
 		</member>
 		<member name="T:System.ComponentModel.Design.MenuCommand">
 			<summary>Used to extract the context for a MenuItem.</summary>
+		</member>
+		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean)">
+			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
+		</member>
+		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String)">
+			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
+		</member>
+		<member name="M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)">
+			<summary>Assert a condition and logs an error message to the Unity console on failure.</summary>
 		</member>
 	</members>
 </doc>
