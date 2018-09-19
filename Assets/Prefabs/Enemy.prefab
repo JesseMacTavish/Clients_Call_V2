@@ -188,6 +188,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa3f860fd00f4546b91a14d6ad1d2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _imp:
+  - {fileID: 8300000, guid: ccf698838d037ad42841021ba1420d04, type: 3}
+  - {fileID: 8300000, guid: e9dcc808ac3658b469c270eef55a1357, type: 3}
+  - {fileID: 8300000, guid: bba3178a0e60a1a4c84dd88d6abbf933, type: 3}
+  _bat:
+  - {fileID: 8300000, guid: 12726024006b45242a2883d749a3bf6a, type: 3}
+  - {fileID: 8300000, guid: a7f462fb11c5ded4c8553781322f768c, type: 3}
+  - {fileID: 8300000, guid: 89253d9596ea20c4fba702123d76e785, type: 3}
+  _wraith:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 643db62e222f84541817b7494f1220d9, type: 3}
+  - {fileID: 8300000, guid: 285a3ee9afb4c3245a65678ca26e8044, type: 3}
+  _mos:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 067cddb94ddfdad4683632c743f5b076, type: 3}
+  - {fileID: 8300000, guid: 4a514b42d0fb5194ebfa0bbdebfa7dd5, type: 3}
+  _fish:
+  - {fileID: 8300000, guid: 9d305f4b8dfd98f41831e73b5161e67b, type: 3}
+  - {fileID: 8300000, guid: 0bc1e16f035834148a86e7f9920cf61e, type: 3}
+  - {fileID: 8300000, guid: b4945f35e56e4db4ca34a85fafd2320a, type: 3}
 --- !u!114 &114166066342914244
 MonoBehaviour:
   m_ObjectHideFlags: 1
