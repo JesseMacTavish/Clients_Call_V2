@@ -250,6 +250,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -414,7 +415,7 @@ Prefab:
         type: 2}
       propertyPath: answersScript.Array.data[0]
       value: "Edwin|We found this boiling cauldron in the woods. The witch must have
-        heard us and ran away.\r^Guard|Ah, alright. Get out of my way now.^Edwin(I
+        heard us and ran away.\r^Guard|Ah, alright. Get out of my way now.^Edwin|(I
         just broke the law. if anyone finds out about this, they will throw me in
         jail as well, and I will never get to save my Emily.\n\r\nguard: ah, alright.
         get out of my way now.\r)"
