@@ -1,309 +1,303 @@
 ﻿{
-  "IMP":
-  {
-  	"EnemyParameters":
-	{
-		"KnockUpImmune":"0",
+  "IMP": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
 
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
 
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
 
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"false",
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "false",
 
-		"DashFrames":"13",
-		"DashStopDistance":"4",
+      "DashFrames": "13",
+      "DashStopDistance": "4",
 
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
   },
 
-  "BAT":
-  {
-  	"EnemyParameters":
-	{
-		"KnockUpImmune":"0",
+  "BAT": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
 
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
 
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
 
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"1",
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "1",
 
-		"DashFrames":"50",
-		"DashStopDistance":"4",
+      "DashFrames": "50",
+      "DashStopDistance": "4",
 
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
   },
 
-  "BATVAR":
-  {
-  	"EnemyParameters":
-	{
-		"KnockUpImmune":"0",
+  "BATVAR": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
 
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
 
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
 
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"false",
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "false",
 
-		"DashFrames":"13",
-		"DashStopDistance":"4",
+      "DashFrames": "13",
+      "DashStopDistance": "4",
 
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
   },
 
-  "WRAITH":
-  {
-  	"EnemyParameters":
-	{
-		"KnockUpImmune":"0",
+  "WRAITH": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
 
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
 
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
 
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"1",
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "1",
 
-		"DashFrames":"13",
-		"DashStopDistance":"4",
+      "DashFrames": "13",
+      "DashStopDistance": "4",
 
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
-  },
-  
-  "WRAITHVAR":
-  {
-	"EnemyParameters":
-	{
-		"KnockUpImmune":"0",
-
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
-
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
-
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"1",
-
-		"DashFrames":"13",
-		"DashStopDistance":"4",
-
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
   },
 
-  "MOS":
-  {
-	"EnemyParameters":
-	{
-		"KnockUpImmune":"0",
+  "WRAITHVAR": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
 
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
 
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
 
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"0",
-		"CanShoot":"1",
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "1",
 
-		"DashFrames":"13",
-		"DashStopDistance":"4",
+      "DashFrames": "13",
+      "DashStopDistance": "4",
 
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
-  },
-  
-  "MOSVAR":
-  {
-	"EnemyParameters":
-	{
-		"KnockUpImmune":"0",
-
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
-
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
-
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"0",
-		"CanShoot":"1",
-
-		"DashFrames":"13",
-		"DashStopDistance":"4",
-
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
   },
 
-  "FISH":
-  {
-  	"EnemyParameters":
-	{
-		"KnockUpImmune":"1",
+  "MOS": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
 
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
 
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
 
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"0",
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "0",
+      "CanShoot": "1",
 
-		"DashFrames":"13",
-		"DashStopDistance":"4",
+      "DashFrames": "13",
+      "DashStopDistance": "4",
 
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
   },
-  
-  "FISHVAR":
-  {
-  	"EnemyParameters":
-	{
-		"KnockUpImmune":"1",
 
-		"Health":"20",
-		"KnockBackSpeed":
-		{
-			"x":"0.25",
-			"y":"0"
-		},
-		"FlyUpSpeed":"0.2",
+  "MOSVAR": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
 
-		"Damage":"10",
-		"AttackRange":"2",
-		"FreezeTime":"0.1",
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
 
-		"Speed":"0.1",
-		"SurroundDistance":
-		{
-			"x":"5",
-			"y":"7"
-		},
-		"CanDash":"0",
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
 
-		"DashFrames":"13",
-		"DashStopDistance":"4",
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "0",
+      "CanShoot": "1",
 
-		"RetreatSpeed":"0.1",
-		"RetreatDistance":"9"
-	}
+      "DashFrames": "13",
+      "DashStopDistance": "4",
+
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
+  },
+
+  "FISH": {
+    "EnemyParameters": {
+      "KnockUpImmune": "1",
+
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
+
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
+
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "0",
+
+      "DashFrames": "13",
+      "DashStopDistance": "4",
+
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
+  },
+
+  "FISHVAR": {
+    "EnemyParameters": {
+      "KnockUpImmune": "1",
+
+      "Health": "20",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
+
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
+
+      "Speed": "0.1",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "0",
+
+      "DashFrames": "13",
+      "DashStopDistance": "4",
+
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
+  },
+
+  "JOKER": {
+    "EnemyParameters": {
+      "KnockUpImmune": "0",
+
+      "Health": "1",
+      "KnockBackSpeed": {
+        "x": "0.25",
+        "y": "0"
+      },
+      "FlyUpSpeed": "0.2",
+
+      "Damage": "10",
+      "AttackRange": "2",
+      "FreezeTime": "0.1",
+
+      "Speed": "0",
+      "SurroundDistance": {
+        "x": "5",
+        "y": "7"
+      },
+      "CanDash": "false",
+
+      "DashFrames": "13",
+      "DashStopDistance": "4",
+
+      "RetreatSpeed": "0.1",
+      "RetreatDistance": "9"
+    }
   }
 }

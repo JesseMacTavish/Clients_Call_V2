@@ -28,7 +28,6 @@ public enum SetBool
     KILL_W_SAVE_E,
     GO_ALONE,
     GO_WITH
-
 }
 
 public class DecisionTracker : MonoBehaviour
@@ -61,6 +60,8 @@ public class DecisionTracker : MonoBehaviour
     public static bool sacrificedEdwin;
     public static bool sacrificedDaughter;
     public static bool killedLord;
+
+    public static bool killedJester;
 
     public static void ToggleBool(SetBool pSetBool)
     {

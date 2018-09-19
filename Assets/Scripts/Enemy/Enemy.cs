@@ -28,10 +28,13 @@ public class Enemy : MonoBehaviour
     Vector3 _oldPosition;
 
     private EnemyAnimation _animation;
+    private Rigidbody _playerRigidbody;
 
     void Start()
     {
         EnemyHandler.Instance.EnemySpawned(gameObject);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        _playerRigidbody = player.GetComponent<Rigidbody>();
 
         _animation = GetComponent<EnemyAnimation>();
         _state = GetComponent<EnemyStates>();
@@ -237,7 +240,31 @@ public class Enemy : MonoBehaviour
     {
         _animation.ResumeAnimation();
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            List<GameObject> enemies = other.GetComponent<Attack>().EnemiesInRange;
+
+            if (!enemies.Contains(gameObject))
+            {
+                enemies.Add(gameObject);
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (Vector3.Distance(transform.position, _playerRigidbody.position) < 2)
+            {
+                return;
+            }
+            other.GetComponent<Attack>().EnemiesInRange.Remove(gameObject);
+        }
+    }
 
     //Parameters
     public int Health

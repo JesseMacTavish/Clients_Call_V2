@@ -8,7 +8,11 @@ public class InGameDialog : MonoBehaviour
 {
     public GameObject dialogBox;
     public AudioSource audioSource;
+    public bool destroyAfter;
+    public bool smallHitbox;
+
     private GameObject _player;
+    private bool isTalkingToMe;
 
     [Space]
     [TextArea]
@@ -17,7 +21,7 @@ public class InGameDialog : MonoBehaviour
 
     Text _dialog;
     Text _name;
-    int _dialogBoxID = -1;
+    private int _dialogBoxID = 0;
     //Variables for slow type
     public float typeDelay = 0.03f;
     float _timeType;
@@ -30,15 +34,16 @@ public class InGameDialog : MonoBehaviour
         _dialog = dialogBox.GetComponentInChildren<Text>();
         _name = dialogBox.transform.Find("Name").GetComponent<Text>();
         _player = GameObject.FindGameObjectWithTag("Player");
-
-        Continue();
     }
 
     void Update()
     {
-        Type();
+        if (isTalkingToMe)
+        {
+            Type();
+        }
 
-        if (Input.GetButtonDown("Fire1") && _dialog.IsActive())
+        if (Input.GetButtonDown("Fire1") && _dialog.IsActive() && isTalkingToMe)
         {
             Continue();
         }
@@ -61,10 +66,16 @@ public class InGameDialog : MonoBehaviour
         else
         {
             dialogBox.SetActive(false);
-            Destroy(gameObject);
+            isTalkingToMe = false;
 
             _player.GetComponent<Movement>().enabled = true;
             _player.GetComponent<Attack>().enabled = true;
+
+
+            if (destroyAfter)
+            {
+                Destroy(gameObject);
+            }
         }
 
         string[] _script = dialogScript[_dialogBoxID].Split('|');
@@ -77,7 +88,7 @@ public class InGameDialog : MonoBehaviour
             string _soundID = textLine[textLine.IndexOf("*") + 1].ToString();
             audioSource.PlayOneShot(sounds[Int32.Parse(_soundID)]);
             textLine = textLine.Remove(textLine.IndexOf("*"), 2);
-        }       
+        }
         else
         {
             _text = textLine;
@@ -104,11 +115,43 @@ public class InGameDialog : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (_dialogBoxID > 0 || smallHitbox)
+        {
+            return;
+        }
+
         if (dialogBox != null)
             dialogBox.SetActive(true);
+
+        string[] _script = dialogScript[0].Split('|');
+        _name.text = _script[0];
+        _text = _script[1];
+
+        isTalkingToMe = true;
 
         _player.GetComponent<Movement>().enabled = false;
         _player.GetComponent<Attack>().enabled = false;
         _player.GetComponent<PlayerAnimation>().StopWalking();
-    }   
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (_dialogBoxID > 0)
+        {
+            return;
+        }
+
+        if (dialogBox != null)
+            dialogBox.SetActive(true);
+
+        string[] _script = dialogScript[0].Split('|');
+        _name.text = _script[0];
+        _text = _script[1];
+
+        isTalkingToMe = true;
+
+        _player.GetComponent<Movement>().enabled = false;
+        _player.GetComponent<Attack>().enabled = false;
+        _player.GetComponent<PlayerAnimation>().StopWalking();
+    }
 }
