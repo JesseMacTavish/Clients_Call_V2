@@ -17002,6 +17002,11 @@ Prefab:
       propertyPath: screenShake
       value: 
       objectReference: {fileID: 534669906}
+    - target: {fileID: 114238130285422632, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
+        type: 2}
+      propertyPath: JumpStrength
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e, type: 2}
   m_IsPrefabAsset: 0

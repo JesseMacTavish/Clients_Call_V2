@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     public void Hit(int pDamage)
     {
-        _health -= pDamage;
+        _health -= pDamage * DecisionTracker.Difficulty;
         _healthbar.UpdateHealthBar(_health);
 
         if (_health <= 0)

@@ -726,45 +726,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114351442928327576, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
-        type: 2}
-      propertyPath: _healthbar
-      value: 
-      objectReference: {fileID: 1047158757}
-    - target: {fileID: 114836248718435550, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
-        type: 2}
-      propertyPath: freezeTime
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 114836248718435550, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
         type: 2}
       propertyPath: screenShake
       value: 
       objectReference: {fileID: 534669906}
-    - target: {fileID: 54097523520068422, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
+    - target: {fileID: 114351442928327576, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
         type: 2}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54097523520068422, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 114836248718435550, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
-        type: 2}
-      propertyPath: DefaultDamage
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: _healthbar
+      value: 
+      objectReference: {fileID: 1047158757}
     - target: {fileID: 114238130285422632, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
         type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114836248718435550, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: Speed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e, type: 2}
@@ -3375,7 +3350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2141268696
 Transform:
   m_ObjectHideFlags: 0
