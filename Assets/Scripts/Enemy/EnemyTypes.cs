@@ -13,6 +13,7 @@ public enum EnemyType
     MOSVAR,
     FISH,
     FISHVAR,
+    JOKER,
 }
 
 public class EnemyTypes : MonoBehaviour
@@ -75,6 +76,9 @@ public class EnemyTypes : MonoBehaviour
                 break;
             case EnemyType.FISHVAR:
                 enemyInfo = _enemyTypes.FISHVAR.EnemyParameters;
+                break;
+            case EnemyType.JOKER:
+                enemyInfo = _enemyTypes.JOKER.EnemyParameters;
                 break;
             default:
                 break;
