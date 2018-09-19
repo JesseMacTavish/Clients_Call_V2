@@ -61,8 +61,6 @@ public class Movement : MonoBehaviour
 
         CheckColisionBorder();
 
-        //_rigidbody.velocity = Vector3.zero;
-
         _velocity += Input.GetAxisRaw("Horizontal") * horizontalMovement;
         _velocity += Input.GetAxisRaw("Vertical") * verticalMovement;
 
@@ -110,7 +108,7 @@ public class Movement : MonoBehaviour
         }
         else if (_camera.InBox)
         {
-            Debug.Log("Ama here");
+            Debug.Log("Ama here"); //todo: dont forget to remove
             if (_rigidbody.position.x <= _leftBorder - _spriteWidth / 200f)
             {
                 _rigidbody.position = new Vector3(_leftBorder - _spriteWidth / 200f, _rigidbody.position.y, _rigidbody.position.z);

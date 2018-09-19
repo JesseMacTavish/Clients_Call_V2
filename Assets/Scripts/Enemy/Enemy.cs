@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Vector2 _knockBackspeed;
     [SerializeField] private float _flyupSpeed = 0.2f;
 
+    [Tooltip("Whether or not the enemy is immune to knockup attacks")]
+    [SerializeField] private bool _knockUpImmune;
+
     float _knockSpeedX;
     float _knockSpeedY;
     float _flightSpeed;
@@ -134,7 +137,7 @@ public class Enemy : MonoBehaviour
 
     public void Fly()
     {
-        if (_state.CurrentState == EnemyStates.EnemyState.FLYUP)
+        if (_knockUpImmune || _state.CurrentState == EnemyStates.EnemyState.FLYUP)
         {
             return;
         }
@@ -247,6 +250,19 @@ public class Enemy : MonoBehaviour
         set
         {
             _flyupSpeed = value;
+        }
+    }
+
+    //Parameters:
+    public bool KnockUp
+    {
+        get
+        {
+            return _knockUpImmune;
+        }
+        set
+        {
+            _knockUpImmune = value;
         }
     }
 }

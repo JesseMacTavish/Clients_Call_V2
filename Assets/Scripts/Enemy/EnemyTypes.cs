@@ -24,6 +24,7 @@ public class EnemyTypes : MonoBehaviour
     private Enemy _enemy;
     private EnemyAttack _enemyAttack;
     private EnemyMovement _enemyMovement;
+    private EnemyDashing _enemyDashing;
     private EnemyRetreat _enemyRetreat;
     private EnemyStates _enemyStates;
 
@@ -35,6 +36,7 @@ public class EnemyTypes : MonoBehaviour
         _enemy = GetComponent<Enemy>();
         _enemyAttack = GetComponent<EnemyAttack>();
         _enemyMovement = GetComponent<EnemyMovement>();
+        _enemyDashing = GetComponent<EnemyDashing>();
         _enemyRetreat = GetComponent<EnemyRetreat>();
 
         _enemyTypes = JsonEnemyTypes.Instance;
@@ -78,6 +80,8 @@ public class EnemyTypes : MonoBehaviour
                 break;
         }
 
+        _enemy.KnockUp = enemyInfo.KnockUpImmune;
+
         _enemy.Health = enemyInfo.Health;
         _enemy.KnockBackSpeed = enemyInfo.KnockBackSpeed;
         _enemy.FlyUpSpeed = enemyInfo.FlyUpSpeed;
@@ -89,6 +93,10 @@ public class EnemyTypes : MonoBehaviour
         _enemyMovement.Speed = enemyInfo.Speed;
         _enemyMovement.SurroundDistance = enemyInfo.SurroundDistance;
         _enemyMovement.CanDash = enemyInfo.CanDash;
+        _enemyMovement.CanShoot = enemyInfo.CanShoot;
+
+        _enemyDashing.DashFrames = enemyInfo.DashFrames;
+        _enemyDashing.StopDistance = enemyInfo.DashStopDistance;
 
         _enemyRetreat.RetreatSpeed = enemyInfo.RetreatSpeed;
         _enemyRetreat.RetreatDistance = enemyInfo.RetreatDistance;

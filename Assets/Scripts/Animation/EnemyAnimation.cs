@@ -28,8 +28,8 @@ public class EnemyAnimation : MonoBehaviour
                 break;
             case EnemyType.WRAITH:
             case EnemyType.WRAITHVAR:
-                _collider.center = new Vector3(-0.3f, -0.6f, 0);
-                _collider.size = new Vector3(3.5f, 8.4f, 2);
+                _collider.center = new Vector3(-0.5f, -0.6f, 0);
+                _collider.size = new Vector3(3.5f, 8.3f, 2);
                 break;
             case EnemyType.MOS:
             case EnemyType.MOSVAR:
