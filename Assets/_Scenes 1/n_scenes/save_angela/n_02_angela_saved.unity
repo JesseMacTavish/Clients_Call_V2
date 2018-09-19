@@ -250,6 +250,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -798,7 +799,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[7]
-      value: "Edwin: I don\u2019t feel so good..."
+      value: "Edwin|I don\u2019t feel so good..."
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -855,6 +856,12 @@ Prefab:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 813787748}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: defaultSceneToLoad
+      value: 
+      objectReference: {fileID: 102900000, guid: 22efa52f9b49c574d9a752c081d8ecc5,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0
