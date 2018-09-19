@@ -801,7 +801,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
-  defaultSceneToload: {fileID: 0}
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -1815,7 +1815,6 @@ GameObject:
   - component: {fileID: 1054428045}
   - component: {fileID: 1054428044}
   - component: {fileID: 1054428043}
-  - component: {fileID: 1054428047}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1890,18 +1889,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1054428047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1054428042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c80f4e9d77e4c514ea5b2eed9bec39fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FileName: Character.json
 --- !u!1 &1054460963
 GameObject:
   m_ObjectHideFlags: 0
