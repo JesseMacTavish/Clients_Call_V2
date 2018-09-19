@@ -106,11 +106,11 @@ public class EnemyParameters
     public int Damage;
     public float AttackRange;
     public float FreezeTime;
+    public bool CanShoot;
 
     public float Speed;
     public Vector2 SurroundDistance;
     public bool CanDash;
-    public float DashRange;
 
     public int DashFrames;
     public float DashStopDistance;

@@ -363,7 +363,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[9]
-      value: Edwin|(If i tell the truth, Angela will be killed!... but if I lie to
+      value: Edwin|(If I tell the truth, Angela will be killed!... but if I lie to
         the guards and they find out, I will be locked up!)
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
@@ -400,8 +400,8 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: answersScript.Array.data[1]
-      value: 'Guard|Just as we thought. you will be coming with us, hag.^Angela|No!
-        I trusted you!
+      value: 'Edwin|There is a witch here! She is doing her dark experiments!^Guard|Just
+        as I thought. You will be coming with me, hag.^Angela|No! I trusted you!
 
         +2'
       objectReference: {fileID: 0}
@@ -414,10 +414,10 @@ Prefab:
         type: 2}
       propertyPath: answersScript.Array.data[0]
       value: "Edwin|We found this boiling cauldron in the woods. The witch must have
-        heard us and ran away.\r^Guard|Ah, alright. Get out of my way now.^Edwin|Edwin
-        in his mind: I just broke the law. if anyone finds out about this, they will
-        throw me in jail as well, and i will never get to save my Emily\n\r\nguard:
-        ah, alright. get out of my way now.\r"
+        heard us and ran away.\r^Guard|Ah, alright. Get out of my way now.^Edwin(I
+        just broke the law. if anyone finds out about this, they will throw me in
+        jail as well, and I will never get to save my Emily.\n\r\nguard: ah, alright.
+        get out of my way now.\r)"
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -453,13 +453,13 @@ Prefab:
         type: 2}
       propertyPath: sceneToLoad1
       value: 
-      objectReference: {fileID: 102900000, guid: e73622b60420c81469ba6c608af9af49,
+      objectReference: {fileID: 102900000, guid: 8e3d3bfdb8b1ec446b5582a37fb2983d,
         type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: sceneToLoad2
       value: 
-      objectReference: {fileID: 102900000, guid: 8e3d3bfdb8b1ec446b5582a37fb2983d,
+      objectReference: {fileID: 102900000, guid: b8e4bac8a1730344da4993e6afad84a0,
         type: 3}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -484,7 +484,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: Op3
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}

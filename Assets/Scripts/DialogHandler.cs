@@ -45,6 +45,7 @@ public class DialogHandler : MonoBehaviour
     string _typedCharacters = "";
 
     [Header("Scenes to load")]
+    public UnityEngine.Object defaultSceneToLoad;
     public UnityEngine.Object sceneToLoad1;
     public UnityEngine.Object sceneToLoad2;
     public UnityEngine.Object sceneToLoad3;
@@ -114,6 +115,10 @@ public class DialogHandler : MonoBehaviour
                 else if (_op3)
                 {
                     SceneManager.LoadScene(sceneToLoad3.name);
+                }
+                else
+                {
+                    SceneManager.LoadScene(defaultSceneToLoad.name);
                 }
             }
             else
@@ -196,7 +201,7 @@ public class DialogHandler : MonoBehaviour
         }
 
         _optionsOn = true;
-        _questionAsked = false;        
+        _questionAsked = false;
     }
 
     protected void CloseOptions()

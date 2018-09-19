@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Vector2 _knockBackspeed;
     [SerializeField] private float _flyupSpeed = 0.2f;
 
+    [Tooltip("Whether or not the enemy is immune to knockup attacks")]
+    [SerializeField] private bool _knockUpImmune;
+
     float _knockSpeedX;
     float _knockSpeedY;
     float _flightSpeed;
@@ -99,6 +102,11 @@ public class Enemy : MonoBehaviour
 
     public bool Hit(int pDamage)
     {
+        if (_state.CurrentState == EnemyStates.EnemyState.DEAD)
+        {
+            return false;
+        }
+
         CancelInvoke();
 
         if (_state.CurrentState == EnemyStates.EnemyState.FLYUP || _state.CurrentState == EnemyStates.EnemyState.AIRDAMAGED)
@@ -115,7 +123,7 @@ public class Enemy : MonoBehaviour
 
         if (_health <= 0)
         {
-            die();
+            startDying();
             return true;
         }
 
@@ -134,7 +142,7 @@ public class Enemy : MonoBehaviour
 
     public void Fly()
     {
-        if (_state.CurrentState == EnemyStates.EnemyState.FLYUP)
+        if (_knockUpImmune || _state.CurrentState == EnemyStates.EnemyState.FLYUP || _state.CurrentState == EnemyStates.EnemyState.DEAD)
         {
             return;
         }
@@ -147,7 +155,7 @@ public class Enemy : MonoBehaviour
 
     public void KnockBack()
     {
-        if (_state.CurrentState != EnemyStates.EnemyState.FLYUP && _state.CurrentState != EnemyStates.EnemyState.AIRDAMAGED)
+        if ((_state.CurrentState != EnemyStates.EnemyState.FLYUP && _state.CurrentState != EnemyStates.EnemyState.AIRDAMAGED) || _state.CurrentState == EnemyStates.EnemyState.DEAD)
         {
             return;
         }
@@ -183,6 +191,12 @@ public class Enemy : MonoBehaviour
                 Instantiate(slash, new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.1f), Quaternion.identity);
                 break;
         }
+    }
+
+    private void startDying()
+    {
+        _state.ChangeState(EnemyStates.EnemyState.DEAD);
+        _animation.DeathAnimation();
     }
 
     private void die()
@@ -247,6 +261,19 @@ public class Enemy : MonoBehaviour
         set
         {
             _flyupSpeed = value;
+        }
+    }
+
+    //Parameters:
+    public bool KnockUp
+    {
+        get
+        {
+            return _knockUpImmune;
+        }
+        set
+        {
+            _knockUpImmune = value;
         }
     }
 }

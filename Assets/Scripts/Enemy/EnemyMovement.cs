@@ -17,6 +17,9 @@ public class EnemyMovement : MonoBehaviour
     [Tooltip("if true: this enemy will dash towards the player instead of normally attacking")]
     [SerializeField] private bool _canDash = false;
 
+    [Tooltip("if true: the enemy will shoot a projectile at the player instead of normally attacking")]
+    [SerializeField] private bool _canShoot;
+
     private static List<int> _availableDegreesRight = new List<int>() /*{ 0, 20, -20, 40, -40, 60, -60, };*/ { 60, 40, 20, 0, -20, -40, -60, };
     private static List<int> _availableDegreesLeft = new List<int>() /*{ 180, 160, 200, 140, 220, 120, 240, };*/ { 120, 140, 160, 180, 200, 220, 240, };
 
@@ -112,6 +115,17 @@ public class EnemyMovement : MonoBehaviour
 
     private void walkTowardsPlayer()
     {
+        if (_canDash)
+        {
+            _state.ChangeState(EnemyStates.EnemyState.DASHING);
+            return;
+        }
+        else if (_canShoot)
+        {
+            _state.ChangeState(EnemyStates.EnemyState.ATTACKING);
+            return;
+        }
+
         Vector3 direction = getTarget() - _transform.position;
         direction.y = 0;
         float distance = direction.magnitude;
@@ -150,7 +164,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void getNextDegree()
     {
-        if (_renderer.flipX)
+        if (!_renderer.flipX)
         {
             if (_availableDegreesRight.Count > 0)
             {
@@ -194,6 +208,11 @@ public class EnemyMovement : MonoBehaviour
 
     private void lookAtPlayer(Vector3 pPlayer)
     {
+        if (_state.CurrentState == EnemyStates.EnemyState.DASHING)
+        {
+            return;
+        }
+
         if (pPlayer.x < _transform.position.x)
         {
             if (_renderer.flipX)
@@ -205,7 +224,7 @@ public class EnemyMovement : MonoBehaviour
         {
             if (!_renderer.flipX)
             {
-                _renderer.flipX = transform;
+                _renderer.flipX = true;
             }
         }
     }
@@ -288,12 +307,24 @@ public class EnemyMovement : MonoBehaviour
             _surroundDistance = value;
         }
     }
-    
+
     public bool CanDash
     {
         set
         {
             _canDash = value;
+        }
+    }
+
+    public bool CanShoot
+    {
+        get
+        {
+            return _canShoot;
+        }
+        set
+        {
+            _canShoot = value;
         }
     }
 }
