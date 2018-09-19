@@ -9,7 +9,7 @@ public class InGameDialog : MonoBehaviour
     public GameObject dialogBox;
     public AudioSource audioSource;
     public bool destroyAfter;
-    public bool smallHitbox;
+    public bool isJester;
 
     private GameObject _player;
     private bool isTalkingToMe;
@@ -115,7 +115,7 @@ public class InGameDialog : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (_dialogBoxID > 0 || smallHitbox)
+        if (_dialogBoxID > 0 || isJester)
         {
             return;
         }
@@ -153,5 +153,17 @@ public class InGameDialog : MonoBehaviour
         _player.GetComponent<Movement>().enabled = false;
         _player.GetComponent<Attack>().enabled = false;
         _player.GetComponent<PlayerAnimation>().StopWalking();
+
+        LevelTracker _playerTracker = _player.GetComponent<LevelTracker>();
+
+        _playerTracker.foundJesterThisLevel = true;
+
+        DecisionTracker.socializer += 3;
+        DecisionTracker.explorer += 1;
+
+        if (_playerTracker.foughtThisLevel && _playerTracker.exploredThisLevel)
+        {
+            DecisionTracker.achiever += 4;
+        }
     }
 }

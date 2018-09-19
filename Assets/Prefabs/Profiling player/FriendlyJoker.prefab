@@ -150,6 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa3f860fd00f4546b91a14d6ad1d2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _imp: []
+  _bat: []
+  _wraith: []
+  _mos: []
+  _fish: []
 --- !u!114 &114604626979710916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,7 +181,7 @@ MonoBehaviour:
   dialogBox: {fileID: 0}
   audioSource: {fileID: 0}
   destroyAfter: 0
-  smallHitbox: 1
+  isJester: 0
   dialogScript:
   - Friendly ghost|Hey, you found me!
   - Friendly ghost|but can you find me in other levels?

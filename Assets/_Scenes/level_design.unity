@@ -114,6 +114,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &16931394
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -36.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -24.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 129.8317
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379758282213494, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e1011da2d6b46c49986401954f5f110, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &128926439
 Prefab:
   m_ObjectHideFlags: 0
@@ -513,6 +555,11 @@ Prefab:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1696510116}
+    - target: {fileID: 114712772751520294, guid: 688fe0e646d08b448bd375f39d9f6e87,
+        type: 2}
+      propertyPath: isJester
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688fe0e646d08b448bd375f39d9f6e87, type: 2}
   m_IsPrefabAsset: 0
@@ -809,11 +856,6 @@ Prefab:
       propertyPath: _healthbar
       value: 
       objectReference: {fileID: 1047158757}
-    - target: {fileID: 114238130285422632, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
-        type: 2}
-      propertyPath: Speed
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e, type: 2}
   m_IsPrefabAsset: 0
@@ -2189,13 +2231,59 @@ MonoBehaviour:
   dialogBox: {fileID: 760574424}
   audioSource: {fileID: 1696510116}
   destroyAfter: 1
-  smallHitbox: 0
+  isJester: 0
   dialogScript:
   - Ghost|Hello Edwin
   - "Ghost|This is where i live \t"
   - Ghost|I hope you like it
   sounds: []
   typeDelay: 0.03
+--- !u!1001 &1317438289
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -59.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -23.017004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 127.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329274018665298, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389822558610726, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+      propertyPath: m_Name
+      value: ExplorerPoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1500aff8c6113141a94b1f8f33751c5, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1353690856
 GameObject:
   m_ObjectHideFlags: 0
