@@ -3,7 +3,7 @@
   {
   	"EnemyParameters":
 	{
-		"KnockUpImmnune":"0",
+		"KnockUpImmune":"0",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -24,7 +24,6 @@
 			"y":"7"
 		},
 		"CanDash":"false",
-		"DashRange":"4",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",
@@ -38,7 +37,7 @@
   {
   	"EnemyParameters":
 	{
-		"KnockUpImmnune":"0",
+		"KnockUpImmune":"0",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -58,10 +57,9 @@
 			"x":"5",
 			"y":"7"
 		},
-		"CanDash":"false",
-		"DashRange":"4",
+		"CanDash":"1",
 
-		"DashFrames":"13",
+		"DashFrames":"50",
 		"DashStopDistance":"4",
 
 		"RetreatSpeed":"0.1",
@@ -73,7 +71,7 @@
   {
   	"EnemyParameters":
 	{
-		"KnockUpImmnune":"0",
+		"KnockUpImmune":"0",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -94,7 +92,6 @@
 			"y":"7"
 		},
 		"CanDash":"false",
-		"DashRange":"4",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",
@@ -108,7 +105,7 @@
   {
   	"EnemyParameters":
 	{
-		"KnockUpImmnune":"0",
+		"KnockUpImmune":"0",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -129,7 +126,6 @@
 			"y":"7"
 		},
 		"CanDash":"1",
-		"DashRange":"4",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",
@@ -143,7 +139,7 @@
   {
 	"EnemyParameters":
 	{
-		"KnockUpImmnune":"0",
+		"KnockUpImmune":"0",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -164,7 +160,6 @@
 			"y":"7"
 		},
 		"CanDash":"1",
-		"DashRange":"4",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",
@@ -178,7 +173,7 @@
   {
 	"EnemyParameters":
 	{
-		"KnockUpImmnune":"0",
+		"KnockUpImmune":"0",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -198,8 +193,8 @@
 			"x":"5",
 			"y":"7"
 		},
-		"CanDash":"false",
-		"DashRange":"4",
+		"CanDash":"0",
+		"CanShoot":"1",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",
@@ -213,7 +208,7 @@
   {
 	"EnemyParameters":
 	{
-		"KnockUpImmnune":"0",
+		"KnockUpImmune":"0",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -233,8 +228,8 @@
 			"x":"5",
 			"y":"7"
 		},
-		"CanDash":"false",
-		"DashRange":"4",
+		"CanDash":"0",
+		"CanShoot":"1",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",
@@ -248,7 +243,7 @@
   {
   	"EnemyParameters":
 	{
-		"KnockUpImmnune":"1",
+		"KnockUpImmune":"1",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -268,8 +263,7 @@
 			"x":"5",
 			"y":"7"
 		},
-		"CanDash":"false",
-		"DashRange":"4",
+		"CanDash":"0",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",
@@ -283,7 +277,7 @@
   {
   	"EnemyParameters":
 	{
-		"KnockUpImmnune":"1",
+		"KnockUpImmune":"1",
 
 		"Health":"20",
 		"KnockBackSpeed":
@@ -303,8 +297,7 @@
 			"x":"5",
 			"y":"7"
 		},
-		"CanDash":"false",
-		"DashRange":"4",
+		"CanDash":"0",
 
 		"DashFrames":"13",
 		"DashStopDistance":"4",

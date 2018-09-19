@@ -19,13 +19,15 @@ public class EnemyHandler : MonoBehaviour
 
     private float _time;
 
-    private bool _firstTime = true;
-    private bool _update = false;
+    private bool _firstTime;
+    private bool _update;
 
     // Use this for initialization
     void Awake()
     {
         Instance = this;
+        _firstTime = true;
+        _update = false;
     }
 
     private void Update()

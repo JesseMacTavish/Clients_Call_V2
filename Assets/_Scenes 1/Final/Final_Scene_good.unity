@@ -134,7 +134,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.size
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -187,7 +187,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[2]
-      value: Edwin|*1
+      value: Edwin|...*1
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -228,8 +228,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[10]
-      value: "\rLord|I could release her, but I will need someone to take her place,
-        someone of your own blood.\r"
+      value: Lord|I heard you found and turned in 4 criminals the past days.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -280,48 +279,43 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[11]
-      value: 'Edwin|(Someone of my own blood? That has to be me.)
-
-'
+      value: Edwin|Oh, I guess I did.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[12]
-      value: "Edwin|(...Or Oscar\u2019s daughter..?)"
+      value: 'Lord|I was going to talk to you about that. '
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[13]
-      value: "Edwin|(No, that\u2019s insanity. He trusted me to take care of her if
-        something ever happened to him.)"
+      value: 'Lord|Because of your positive influence on the town, I was going to
+        give your daughter back. '
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[14]
-      value: Edwin|(What kind of monster would do that?)
+      value: Lord|Quite the convinience you came here with the same intention.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[15]
-      value: Edwin|(But if I sacrifice myself, Emily will grow up without a father.)
+      value: Edwin|Really? Thank you so much!
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[16]
-      value: Edwin|(Killing the Lord would prevent any of that from happening, but
-        he did nothing wrong.)
+      value: 'Lord|No, thank you. Because of you, the town is safer for every citizen. '
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[17]
-      value: Edwin|(And without him, this town will have no leader and it will end
-        in chaos.)
+      value: Lord|I will go release her right away.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[18]
-      value: Edwin|(What do i do?!)%Sacrifice self%Sacrifice Oscar's daughter%Kill
-        Lord
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -785,7 +779,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
-  defaultSceneToload: {fileID: 0}
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -1476,7 +1470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &722139830
 MeshCollider:
   m_ObjectHideFlags: 0
