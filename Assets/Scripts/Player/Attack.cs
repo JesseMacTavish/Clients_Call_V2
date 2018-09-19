@@ -13,9 +13,6 @@ public class Attack : MonoBehaviour
     [Tooltip("LeapLength, leapHeight\nActual leap is 2x longer than LeapLength")]
     public Vector2 LeapLengthAndHeight;
 
-    [Header("Just for you henrik!!!")]
-    public Vector2 JUMP;
-
     public ScreenShake screenShake;
 
     public float freezeTime = 0.1f;
@@ -51,11 +48,6 @@ public class Attack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            GetComponent<Rigidbody>().AddForce(new Vector3(0, JUMP.y, 0), ForceMode.VelocityChange);
-        }
-
         if (Input.GetButtonDown("Fire1"))
         {
             if (!_animation.IsAttacking)

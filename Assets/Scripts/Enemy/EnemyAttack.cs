@@ -86,7 +86,7 @@ public class EnemyAttack : MonoBehaviour
 
         if (_enemyMovement.CanShoot)
         {
-            Instantiate(Projectile, transform.position, Quaternion.identity).GetComponent<MoveProjectile>().Damage = Damage; //todo:
+            Instantiate(Projectile, transform.position, Quaternion.identity).GetComponent<MoveProjectile>().Damage = Damage;
             return;
         }
 

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemyHandler : MonoBehaviour
 {
-    //TODO: make it so that you can only progress when you killed all enemies
-
     [Tooltip("The time IN SECONDS between 2 enemy updates")]
     [SerializeField] private float _updateInterval = 1;
 
