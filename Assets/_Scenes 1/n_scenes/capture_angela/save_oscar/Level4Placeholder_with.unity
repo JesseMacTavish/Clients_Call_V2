@@ -2556,7 +2556,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1758452603}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3580,20 +3580,35 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 224242675758637482, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224242675758637482, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -223
+      objectReference: {fileID: 0}
+    - target: {fileID: 224242675758637482, guid: 5874098544f1c1b4d925cfc6acf10170,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 148
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5874098544f1c1b4d925cfc6acf10170, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &279818818 stripped
+--- !u!224 &279818818 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224242675758637482, guid: 5874098544f1c1b4d925cfc6acf10170,
+    type: 2}
+  m_PrefabInternal: {fileID: 279818817}
+--- !u!114 &279818819 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114739562426115346, guid: 5874098544f1c1b4d925cfc6acf10170,
+  m_CorrespondingSourceObject: {fileID: 114352937923920004, guid: 5874098544f1c1b4d925cfc6acf10170,
     type: 2}
   m_PrefabInternal: {fileID: 279818817}
   m_Script: {fileID: 11500000, guid: 069875fdb691a2d4a8e8086b35e62c96, type: 3}
---- !u!224 &279818819 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224013341964876264, guid: 5874098544f1c1b4d925cfc6acf10170,
-    type: 2}
-  m_PrefabInternal: {fileID: 279818817}
 --- !u!1 &280477414
 GameObject:
   m_ObjectHideFlags: 0
@@ -9436,7 +9451,7 @@ Prefab:
         type: 2}
       propertyPath: _healthbar
       value: 
-      objectReference: {fileID: 279818818}
+      objectReference: {fileID: 279818819}
     - target: {fileID: 212773808761581138, guid: 8f8aa4d2f4d59e549b37aa66d3a36a8e,
         type: 2}
       propertyPath: m_SortingOrder
@@ -18241,8 +18256,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 11252484}
+  - {fileID: 279818818}
   - {fileID: 219865583}
-  - {fileID: 279818819}
   - {fileID: 2037616853}
   - {fileID: 1907051239}
   m_Father: {fileID: 0}
