@@ -13,6 +13,9 @@ public class Attack : MonoBehaviour
     [Tooltip("LeapLength, leapHeight\nActual leap is 2x longer than LeapLength")]
     public Vector2 LeapLengthAndHeight;
 
+    [Tooltip("How far the dash is")]
+    public float DashDistance;
+
     public ScreenShake screenShake;
 
     public float freezeTime = 0.1f;
@@ -31,7 +34,8 @@ public class Attack : MonoBehaviour
     private Vector3 _newPosition;
     private Vector3 _leapDirection;
     private float _value;
-    private bool _jumping;
+    private bool _dashing;
+    private Vector3 _dashDirection;
 
     private SpriteRenderer _renderer;
 
@@ -50,6 +54,11 @@ public class Attack : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            if (_animation.IsDashing)
+            {
+                return;
+            }
+
             if (!_animation.IsAttacking)
             {
                 _combo = 0;
@@ -61,10 +70,22 @@ public class Attack : MonoBehaviour
 
             _animation.AttackAnimation();
         }
+        else if (Input.GetButtonDown("Fire2")) //Need to make it so that dash hurts enemies
+        {
+            if (!_animation.IsAttacking && !_animation.IsDashing) //&& !_animation.IsJumping) //TODO: ask malte
+            {
+                dash();
+            }
+        }
 
         if (_leaping)
         {
             leaping();
+        }
+
+        if (_dashing)
+        {
+            dashing();
         }
     }
 
@@ -128,7 +149,7 @@ public class Attack : MonoBehaviour
                         i--;
                     }
 
-                    _animation.FreezeAnimation();
+                    _animation.FreezeAnimations();
                     enemy.GetComponent<EnemyAnimation>().FreezeAnimation();
                     Invoke("UnFreezeAnimations", freezeTime);
                     enemy.Invoke("UnFreezeAnimations", freezeTime);
@@ -147,7 +168,7 @@ public class Attack : MonoBehaviour
                         i--;
                     }
 
-                    _animation.FreezeAnimation();
+                    _animation.FreezeAnimations();
                     enemy.GetComponent<EnemyAnimation>().FreezeAnimation();
                     Invoke("UnFreezeAnimations", freezeTime);
                     enemy.Invoke("UnFreezeAnimations", freezeTime);
@@ -193,14 +214,14 @@ public class Attack : MonoBehaviour
 
     private void leap()
     {
-        _oldPosition = transform.position;
-        _newPosition = _oldPosition + (Vector3)LeapLengthAndHeight;
-        _leapDirection = _newPosition - _oldPosition;
+        _oldPosition = _rigidbody.position;
+
+        _leapDirection = LeapLengthAndHeight;
         if (GetComponent<SpriteRenderer>().flipX)
         {
             _leapDirection.x *= -1;
         }
-        _newPosition = _oldPosition + _leapDirection;
+
         _value = 0;
         _highestPoint = false;
         _leaping = true;
@@ -235,6 +256,39 @@ public class Attack : MonoBehaviour
         }
     }
 
+    private void dash()
+    {
+        _animation.DashAnimation();
+
+        _oldPosition = _rigidbody.position;
+        if (_renderer.flipX)
+        {
+            _dashDirection = Vector3.left;
+        }
+        else
+        {
+            _dashDirection = Vector3.right;
+        }
+
+        _dashDirection *= DashDistance;
+
+        _value = 0;
+
+        _dashing = true;
+    }
+
+    private void dashing()
+    {
+        _value += 1 / 20f;
+
+        _rigidbody.position = _oldPosition + _dashDirection * _value;
+
+        if (_value >= 1)
+        {
+            _dashing = false;
+        }
+    }
+
     List<Enemy> getEnemiesInRange()
     {
         List<Enemy> enemies = new List<Enemy>();
@@ -263,5 +317,15 @@ public class Attack : MonoBehaviour
     public void UnFreezeAnimations()
     {
         _animation.ResumeAnimation();
+    }
+
+    void IncreaseHitBox()
+    {
+        _trigger.size = new Vector3(30, _trigger.size.y, 30);
+    }
+
+    void DecreaseHitBox()
+    {
+        _trigger.size = new Vector3(Attackrange, _trigger.size.y, Attackrange);
     }
 }

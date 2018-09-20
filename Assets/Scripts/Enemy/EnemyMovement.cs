@@ -60,6 +60,9 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
+        if (_playerRigidbody == null)        
+            return;
+        
         lookAtPlayer(_playerRigidbody.position);
 
         if (_state.CurrentState == EnemyStates.EnemyState.SURROUNDING)

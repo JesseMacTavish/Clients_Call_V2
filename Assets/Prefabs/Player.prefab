@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _healthbar: {fileID: 0}
+  _gameOverScreen: {fileID: 0}
 --- !u!114 &114836248718435550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Attackrange: 18
-  DefaultDamage: 3
+  DefaultDamage: 1
   LeapLengthAndHeight: {x: 1, y: 0}
   screenShake: {fileID: 0}
   freezeTime: 0.1

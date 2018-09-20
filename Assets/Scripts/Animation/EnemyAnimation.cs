@@ -75,27 +75,29 @@ public class EnemyAnimation : MonoBehaviour
 
                 _audioClips = new List<AudioClip>(_fish);
                 break;
+            default:
+                _audioClips = new List<AudioClip>(_wraith);
+                break;
         }
     }
 
     private void walkSound()
     {
-        //_audioSource.PlayOneShot(_audioClips[0]);
+        _audioSource.PlayOneShot(_audioClips[0]);
     }
 
     private void attackSound()
     {
-        //_audioSource.PlayOneShot(_audioClips[1]);
+        _audioSource.PlayOneShot(_audioClips[1]);
     }
 
     private void deathSound()
     {
-        //_audioSource.PlayOneShot(_audioClips[2]);
+        _audioSource.PlayOneShot(_audioClips[2]);
     }
 
     public void WalkAnimation()
     {
-        walkSound();
         _animator.Play(_type + "Walk");
     }
 

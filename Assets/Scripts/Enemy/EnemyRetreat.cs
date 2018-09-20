@@ -37,6 +37,9 @@ public class EnemyRetreat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_playerRigidbody == null)
+            return;
+
         if (_state.CurrentState == EnemyStates.EnemyState.RETREAT)
         {
             if (_time >= _updateInterval)

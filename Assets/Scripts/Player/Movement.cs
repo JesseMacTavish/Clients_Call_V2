@@ -42,6 +42,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        if (_animation.IsDamaged || _animation.IsDashing)
+        {
+            return;
+        }
+
         if (Input.GetButton("Fire3") && !_isJumping)
         {
             _rigidbody.AddForce(new Vector3(0, JumpStrength, 0), ForceMode.VelocityChange);
@@ -146,5 +151,6 @@ public class Movement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         _isJumping = false;
+        _animation.ForceIdleAnimation();
     }
 }

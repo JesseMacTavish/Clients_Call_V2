@@ -10,17 +10,30 @@ public class Player : MonoBehaviour
 
     [Header("Health bar slider")]
     [SerializeField] private Healthbar _healthbar;
+    [SerializeField] private GameObject _gameOverScreen;
+
+    private PlayerAnimation _animation;
+    private Attack _attack;
+
+    private void Start()
+    {
+        _attack = GetComponent<Attack>();
+        _animation = GetComponent<PlayerAnimation>();
+    }
 
     public void Hit(int pDamage)
     {
         _health -= pDamage * DecisionTracker.Difficulty;
         _healthbar.UpdateHealthBar(_health);
 
+        _animation.DamageAnimation();
+
+        _animation.FreezeAnimations();
+        _attack.Invoke("UnFreezeAnimations", _attack.freezeTime);
+
         if (_health <= 0)
         {
-            //Die
-            //GetComponent<PlayerAnimation>().DeathAnimation();
-            //Destroy(gameObject);
+            Invoke("Die", 1f);
         }
     }
 
@@ -30,5 +43,11 @@ public class Player : MonoBehaviour
         {
             return _health;
         }
+    }
+
+    void Die()
+    {
+        _gameOverScreen.SetActive(true);
+        Destroy(gameObject);
     }
 }

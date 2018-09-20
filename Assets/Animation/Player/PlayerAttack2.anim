@@ -3,7 +3,7 @@
 --- !u!74 &7400000
 AnimationClip:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: PlayerAttack2
   serializedVersion: 6
@@ -266,11 +266,18 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 1.4166666
+    functionName: makeSlash
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 3
+    messageOptions: 0
+  - time: 1.4166666
     functionName: attack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: 0
+    intParameter: 3
     messageOptions: 0
   - time: 1.4166666
     functionName: throwEnemyUp
@@ -279,13 +286,6 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.4166666
-    functionName: makeSlash
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 3
-    messageOptions: 0
   - time: 1.5833334
     functionName: continueAnimation
     data: 
@@ -293,8 +293,8 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.7083334
-    functionName: attack
+  - time: 1.6666666
+    functionName: IncreaseHitBox
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -307,14 +307,28 @@ AnimationClip:
     floatParameter: 0
     intParameter: 2
     messageOptions: 0
+  - time: 1.7083334
+    functionName: attack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 2
+    messageOptions: 0
+  - time: 1.7916666
+    functionName: makeSlash
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 2
+    messageOptions: 0
   - time: 1.7916666
     functionName: attack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: 0
+    intParameter: 2
     messageOptions: 0
-  - time: 1.7916666
+  - time: 1.9166666
     functionName: makeSlash
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -328,17 +342,10 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.9166666
-    functionName: throwEnemyAway
+  - time: 2
+    functionName: DecreaseHitBox
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
-    messageOptions: 0
-  - time: 1.9166666
-    functionName: makeSlash
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 2
     messageOptions: 0
