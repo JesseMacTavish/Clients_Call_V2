@@ -341,11 +341,22 @@ public class Attack : MonoBehaviour
         _animation.ResumeAnimation();
     }
 
+<<<<<<< HEAD
     public int Damage
     {
         get
         {
             return DefaultDamage * (_combo + 1); 
         }
+=======
+    void IncreaseHitBox()
+    {
+        _trigger.size = new Vector3(30, _trigger.size.y, 30);
+    }
+
+    void DecreaseHitBox()
+    {
+        _trigger.size = new Vector3(Attackrange, _trigger.size.y, Attackrange);
+>>>>>>> 9ae1e467bd955d06805c0c324dc802db71796a90
     }
 }

@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     [Header("Health bar slider")]
     [SerializeField] private Healthbar _healthbar;
+    [SerializeField] private GameObject _gameOverScreen;
 
     private PlayerAnimation _animation;
     private Attack _attack;
@@ -32,14 +33,8 @@ public class Player : MonoBehaviour
 
         if (_health <= 0)
         {
-            //Die
-            die();
+            Invoke("Die", 1f);
         }
-    }
-
-    private void die()
-    {
-        Debug.Log("Player died"); //todo: something.
     }
 
     public int Health
@@ -48,5 +43,11 @@ public class Player : MonoBehaviour
         {
             return _health;
         }
+    }
+
+    void Die()
+    {
+        _gameOverScreen.SetActive(true);
+        Destroy(gameObject);
     }
 }

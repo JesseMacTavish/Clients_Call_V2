@@ -250,6 +250,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -1287,7 +1288,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[46]
-      value: 'Edwin|Edwin: Of course she can stay with me. But I dont think -... '
+      value: 'Edwin|Of course she can stay with me. But I don''t think -... '
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -1354,6 +1355,11 @@ Prefab:
       value: 
       objectReference: {fileID: 102900000, guid: 7c9fb0193f1631946897220e20c21cbe,
         type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: ammountOfOptions
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0

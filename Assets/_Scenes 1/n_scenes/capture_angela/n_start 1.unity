@@ -250,6 +250,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -331,6 +332,93 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 149807899}
   m_CullTransparentMesh: 0
+--- !u!1 &218770130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218770134}
+  - component: {fileID: 218770133}
+  - component: {fileID: 218770132}
+  - component: {fileID: 218770131}
+  m_Layer: 0
+  m_Name: Ghost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!64 &218770131
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218770130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &218770132
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218770130}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c5e627064b760864e91138f68d6c23b2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &218770133
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218770130}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &218770134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218770130}
+  m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: -1.7202, y: -0.79004, z: -1.55}
+  m_LocalScale: {x: -1.2858355, y: 0.00000080391123, z: -0.9245688}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &249381565
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +803,172 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 468941890}
   m_CullTransparentMesh: 0
+--- !u!1001 &525710489
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: pictures.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[1]
+      value: Edwin|(She now lives as his endentured servant, taken as compensation
+        for paying too little.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[2]
+      value: Edwin|(He will pay for this.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[3]
+      value: Edwin|(Killing him will do no good, but I will get her back, no matter
+        what.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[4]
+      value: Edwin|(If he shows resistance, I will do what has to be done.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[5]
+      value: Edwin|(Im going to my friend Oscar, he can probably tell me what I need
+        to know.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[6]
+      value: "Edwin|(My head\u2026 my vision is getting blurry.)+0\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[7]
+      value: Edwin|(Whats that? An apparition?)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[8]
+      value: Edwin|(I see a ghastly horseman in the clearing, gazing at the moon!)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[10]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogScript.Array.data[0]
+      value: Edwin|(My daughter, Emily, was taken by Lord Hoffmann 2 years ago.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: answersScript.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 1712648660}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: optionsBox
+      value: 
+      objectReference: {fileID: 861312694}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sliders
+      value: 
+      objectReference: {fileID: 791136214}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1988906707}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: pictures.Array.data[0]
+      value: 
+      objectReference: {fileID: 1113467326}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: pictures.Array.data[1]
+      value: 
+      objectReference: {fileID: 218770130}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: defaultSceneToLoad
+      value: 
+      objectReference: {fileID: 102900000, guid: 925ec572851cccf4cb660db2ee1820e4,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &606412297
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,366 +1122,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &854067478
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.size
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: answersScript.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4850028126704700, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[1]
-      value: "Edwin|I guess it seems real enough for people believing in it. \r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[2]
-      value: "Edwin|Anyway, that\u2019s not what I came by to talk to you about. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[3]
-      value: Edwin|Thank you for taking some time off from your work to help me out,
-        by the way.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[4]
-      value: Oscar|Anything for you, friend. So tell me, what is this all about?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[5]
-      value: Edwin|I want Emily back.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[6]
-      value: Oscar|Oh, this sounds like an adventure.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[7]
-      value: "Edwin|I don\u2019t exactly know what to do. I was thinking to find the
-        Lord and try to settle an agreement. And if not- \u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[8]
-      value: Oscar|If not, then what?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[9]
-      value: "Edwin|\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[10]
-      value: Edwin|How far would you go to save Karoline?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[0]
-      value: "Oscar|\u2026 So she claimed to be a witch, huh? I thought people these
-        days started realizing magic isn\u2019t real. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[11]
-      value: Oscar|My daughter? I am lucky to not be in a situation where i need to
-        answer that.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[12]
-      value: Edwin|I need your opinion. How far would you go for her safety and happiness?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[13]
-      value: "Oscar|Hm\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[14]
-      value: 'Oscar|As far as needed, I believe. She is all I have left, you know. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[15]
-      value: Edwin|I know. I will keep that in mind.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[16]
-      value: Oscar|What are you thinking of doing, anyway?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[17]
-      value: Edwin|I am not sure. For now I will just talk to him.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[18]
-      value: Edwin|Do you know where i can find him?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[19]
-      value: "Oscar|I heard he doesn\u2019t like others to know his location."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[20]
-      value: Oscar|I did, however, hear rumors about him giving criminals their sentences
-        in some other church.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[21]
-      value: 'Oscar|I don''t know which one, though. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[22]
-      value: Edwin|Why give sentences in church?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[24]
-      value: Edwin|Now that i think about it, Angela will probably be there.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[23]
-      value: Oscar|Something about forgiveness for his cruel punishments.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[25]
-      value: Edwin|So if i find her, I found the right church?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[26]
-      value: 'Oscar|According to your story, it sounds like it. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[27]
-      value: "Oscar|\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[28]
-      value: "Oscar|Speaking of sentences, though\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[29]
-      value: 'Edwin|What is it? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[30]
-      value: "Oscar|I kind of\u2026 did something. I would say i shouldn\u2019t have,
-        but I don\u2019t really regret it."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[31]
-      value: 'Edwin|What did you do? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[32]
-      value: Oscar|You see, we got robbed a few weeks back. The robber had a knife,
-        and Karoline was alone in her room.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[33]
-      value: Oscar|Fearing for the life, I snuck up behind the man and killed him.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[34]
-      value: Oscar|I know in my heart I made the right choice, and i would not have
-        done differently if it happened again, but the guilt is still eating me from
-        the inside.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[35]
-      value: "Edwin|That\u2019s horrible. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[36]
-      value: "Oscar|That\u2019s why i need you to turn me in. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[37]
-      value: Oscar|This being considered self defence, the sentence will probably
-        just be a few years.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[38]
-      value: Oscar|Hopefully some of my guilt will have faded by then.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[39]
-      value: "Oscar|I would turn myself in but i can\u2019t make myself do it."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[40]
-      value: "Edwin|You\u2019re making me anxious. I can\u2019t have you locked up.
-        Who is going to take care of Karoline?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[41]
-      value: "Edwin|A seven year old can\u2019t live on her own!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[42]
-      value: Oscar|I have been thinking, and I decided that if something happens to
-        me,
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[43]
-      value: Oscar|...Whether it is you turn me in or I get injured, or anything that
-        prevents me from taking care of Karoline,
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[44]
-      value: 'Oscar|... I want you to raise her. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[45]
-      value: 'Oscar|If you want to, naturally. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[46]
-      value: 'Edwin|Edwin: Of course she can stay with me. But I dont think -... '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogScript.Array.data[47]
-      value: Oscar|Come on, Edwin. Please help me redeem my guilt.%Leave him be%Turn
-        him in
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: answersScript.Array.data[2]
-      value: Being honest I see. Even though you are letting millions of lives die.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: Op1
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: Op2
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: answersScript.Array.data[1]
-      value: "Edwin|Alright, Oscar. I will turn you in and take care of Karoline until
-        you are free.\r^Oscar|Thank you, Edwin. I know that's the right thing.. \n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: answersScript.Array.data[0]
-      value: "Edwin|I\u2019m sorry, Oscar. I can\u2019t bring myself to do that.^Oscar|I
-        see. That\u2019s alright. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: dialogBox
-      value: 
-      objectReference: {fileID: 1712648660}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: optionsBox
-      value: 
-      objectReference: {fileID: 861312694}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: sliders
-      value: 
-      objectReference: {fileID: 791136214}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: sceneToLoad1
-      value: 
-      objectReference: {fileID: 102900000, guid: dff1aa6fd7987e648b3dc3badf36dcb8,
-        type: 3}
-    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
-        type: 2}
-      propertyPath: sceneToLoad2
-      value: 
-      objectReference: {fileID: 102900000, guid: 5c23d5835cabca54594bdfc80d96b0a0,
-        type: 3}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &861312694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,130 +1158,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 134.3, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &865072034
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 865072036}
-  - component: {fileID: 865072035}
-  m_Layer: 0
-  m_Name: audio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &865072035
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 865072034}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &865072036
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 865072034}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0342798, y: 0.4096899, z: -3.0550365}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1054428042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1406,93 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1074286609}
   m_CullTransparentMesh: 0
+--- !u!1 &1113467326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113467330}
+  - component: {fileID: 1113467329}
+  - component: {fileID: 1113467328}
+  - component: {fileID: 1113467327}
+  m_Layer: 0
+  m_Name: Bg2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!64 &1113467327
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113467326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1113467328
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113467326}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: adfbd23fa0a90c14fb4e702f1bacf479, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1113467329
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113467326}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1113467330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113467326}
+  m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: 0, y: 0, z: -1.33}
+  m_LocalScale: {x: -1.7784674, y: -0.0013894276, z: -1.0003879}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &1337011007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,93 +1893,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1714551238}
   m_CullTransparentMesh: 0
---- !u!1 &1749156251
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1749156255}
-  - component: {fileID: 1749156254}
-  - component: {fileID: 1749156253}
-  - component: {fileID: 1749156252}
-  m_Layer: 0
-  m_Name: Plane (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!64 &1749156252
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1749156251}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1749156253
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1749156251}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 4c3f32cef9d88df4bafa6107e13e7bbf, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1749156254
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1749156251}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1749156255
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1749156251}
-  m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 2.7, y: -0.11, z: -0.55}
-  m_LocalScale: {x: -1.7715973, y: 0.00000058127983, z: -1.147428}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &1793687189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,7 +2164,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1fbbe08f55cda4d4088b827d627ba125, type: 2}
+  - {fileID: 2100000, guid: c0516797db6e0de4693c8ffce9eb3586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2434,3 +2204,127 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!1 &1988906706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988906708}
+  - component: {fileID: 1988906707}
+  m_Layer: 0
+  m_Name: audio_source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1988906707
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1988906706}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1988906708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1988906706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -106.71953, y: 130.50482, z: -103.9239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Canvas
   - Fire
+  - BGMusic
   layers:
   - Default
   - TransparentFX

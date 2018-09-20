@@ -75,6 +75,9 @@ public class EnemyAnimation : MonoBehaviour
 
                 _audioClips = new List<AudioClip>(_fish);
                 break;
+            default:
+                _audioClips = new List<AudioClip>(_wraith);
+                break;
         }
     }
 

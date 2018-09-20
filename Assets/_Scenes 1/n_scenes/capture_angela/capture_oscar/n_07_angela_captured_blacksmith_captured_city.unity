@@ -618,6 +618,11 @@ Prefab:
       value: 
       objectReference: {fileID: 102900000, guid: 28e69d43d9b6db44a936125d8e3976e0,
         type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: ammountOfOptions
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0
@@ -757,6 +762,7 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
@@ -2438,8 +2444,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757525081}
   m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -2.1251721, y: -0.0016602906, z: -1.1954093}
+  m_LocalPosition: {x: 0, y: -0, z: 0.51}
+  m_LocalScale: {x: -2.1676755, y: -0.0016934964, z: -1.2193174}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

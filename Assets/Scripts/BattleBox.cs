@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class BattleBox : MonoBehaviour
 {
-    public GameObject wave;
+    [SerializeField]
+    private GameObject wave;
     public bool isTransition;
     public Object sceneToLoad;
     public GameObject afterTalk;
@@ -30,8 +31,10 @@ public class BattleBox : MonoBehaviour
 
             _camera.StopFight();
 
-
             _canvas.transform.Find("Arrow").gameObject.SetActive(true);
+
+            if (afterTalk == null)
+                Destroy(gameObject);          
         }
 
         if (_camera.EndOfScene)
