@@ -18,13 +18,13 @@ EditorBuildSettings:
     path: Assets/_Scenes 1/n_scenes/Level1Placeholder_meet_angela.unity
     guid: 925ec572851cccf4cb660db2ee1820e4
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/Level2Placeholder.unity
+    path: Assets/_Scenes 1/n_scenes/capture_angela/Level2Placeholder_blacksmith.unity
     guid: acea70001e3224048bfbbfe96f809156
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/Level3Placeholder 1.unity
+    path: Assets/_Scenes 1/n_scenes/capture_angela/Level3Placeholder_captured.unity
     guid: 822a3638aada6e543890da7518eb5d88
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/Level3Placeholder 2.unity
+    path: Assets/_Scenes 1/n_scenes/capture_angela/Level3Placeholder_alive.unity
     guid: 6baf815742dcd1e4a85f8de542a6119e
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/capture_angela/n_02_angela_captured2.unity
@@ -49,25 +49,53 @@ EditorBuildSettings:
       1.unity
     guid: 28e69d43d9b6db44a936125d8e3976e0
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/go_alone/n_07_angela_2_captured_blacksmith_captured_city
-      2.unity
+    path: Assets/_Scenes 1/Final/Final_Scene_bad_choose_again_oscar_alive.unity
+    guid: c17af62152156ee43a9b09b5bd0043bd
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Final_Scene_bad_choose_again_oscar_captured.unity
+    guid: 15027cbd5992da44284b6a52ee487c49
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Final_Scene_bad_oscar_alive.unity
+    guid: 696730cf07a756542871ca485f57a8f6
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Final_Scene_bad_oscar_captured.unity
+    guid: 96885bfc461797e45b8dc33ab68b432d
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Final_Scene_good.unity
+    guid: ec3a2cfa590a588438186b71f51e801d
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Kill_Lord.unity
+    guid: 44d5aa0829dd6ee49a2945846d6974d1
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Narrative.unity
+    guid: 96943ea0e973957409c27b3fd703a0c3
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Sacrifice_daughter_oscar_alive.unity
+    guid: 932454f10e1b6b84aad173506ede21b6
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Sacrifice_daughter_oscar_captured.unity
+    guid: 8bccb6ef4f822ff4aa75d0d027395732
+  - enabled: 1
+    path: Assets/_Scenes 1/Final/Sacrrifice_self.unity
+    guid: 81cd37d0bc9e8e04d9c97876bdd88cba
+  - enabled: 1
+    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_07_angela_2_captured_blacksmith_captured_city_alone.unity
     guid: 11ee559a1f17d2642b9ddb253bf858f4
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/go_alone/Level4Placeholder.unity
+    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/Level4Placeholder_alone.unity
     guid: 18dacf28e8118e148be9a2c97f9cb8b4
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/go_with/n_07_angela_2_captured_blacksmith_captured_city
-      2.unity
+    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_07_angela_2_captured_blacksmith_captured_city_with.unity
     guid: 2b6c07db47fdcfa4da9fc5047e9412b6
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/go_with/Level4Placeholder.unity
+    path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/Level4Placeholder_with.unity
     guid: 59a86ef315097f841b24a38417fed2a3
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/Level4Placeholder1.unity
+    path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/Level4Placeholder_alone.unity
     guid: 93ee33648ce39b749a1d7a0e0b1d7819
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/Level4Placeholder2.unity
-    guid: 8a37053844554524cabac6e377dd9211
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/n_07_angela_2_captured_blacksmith_captured_city
       2.unity
@@ -77,13 +105,13 @@ EditorBuildSettings:
       1.unity
     guid: c44e34c9d4cd6d947a8acc672cdb8c7a
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/Level2Placeholder.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/Level2Placeholder_blacksmith.unity
     guid: 22efa52f9b49c574d9a752c081d8ecc5
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/Level3Placeholder 1.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/Level3Placeholder_captured.unity
     guid: ffe89ee0d792f0d47a661be9d7a5f665
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/Level3Placeholder 2.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/Level3Placeholder_alive.unity
     guid: 335d5b223306311469997f91740e34a5
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/save_angela/n_02_angela_saved.unity
@@ -107,10 +135,10 @@ EditorBuildSettings:
     path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/n_09_angela_2_alive_blacksmith_alive_william.unity
     guid: b48227ddb95c55645b8daee9e7751205
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_william/level4Placeholder1.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_william/level4Placeholder_stay.unity
     guid: d7b8a60ed3315fe48bf960d7dcf4c857
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_william/level4Placeholder2.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_william/level4Placeholder_leave.unity
     guid: 91050eeca8e3c4a42a68b4ba0d9e9a1a
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_william/n_07_angela_2_alive_blacksmith_alive_william_leave.unity
@@ -134,10 +162,10 @@ EditorBuildSettings:
     path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/n_09_angela_2_captured_blacksmith_captured_with.unity
     guid: f33505383c07ce64ab3d4e06a2ee7d9e
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_elizabeth/level4Placeholder1.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_elizabeth/level4Placeholder_no.unity
     guid: 9e9a3fd1e248d0148a58649db9302119
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_elizabeth/level4Placeholder2.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_elizabeth/level4Placeholder_yes.unity
     guid: 1fc9485df804f29439fd5bb6d82c17ae
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/save_angela/save_oscar/choose_elizabeth/n_09_angela_2_alive_blacksmith_alive_Elizabeth_no
@@ -151,10 +179,10 @@ EditorBuildSettings:
       2.unity
     guid: 2284ecf8717dc20478d76545b698328a
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_elizabeth 1/Level4Placeholder1.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_elizabeth 1/Level4Placeholder_no.unity
     guid: b211bb5a19c405b48853b16a6dafb688
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_elizabeth 1/Level4Placeholder2.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_elizabeth 1/Level4Placeholder_yes.unity
     guid: 59295690b6b8b1b4791bbb16ad7974c4
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_elizabeth 1/n_09_angela_2_alive_blacksmith_captured_Elizabeth_no
@@ -172,10 +200,10 @@ EditorBuildSettings:
     path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/n_09_angela_2_alive_blacksmith_captured_alone.unity
     guid: c29a65e732a6ce647b0d7dc1ac1f7270
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_william 1/Level4Placeholder1.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_william 1/Level4Placeholder_no.unity
     guid: 8f860ddf5c29d404ea115069143fd911
   - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_william 1/Level4Placeholder2.unity
+    path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_william 1/Level4Placeholder_yes.unity
     guid: 0c847f18ffd4eb845bf4fec73437bfc0
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/save_angela/capture_oscar/choose_william 1/n_07_angela_2_alive_blacksmith_captured_william_leave
