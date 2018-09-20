@@ -29,6 +29,7 @@ GameObject:
   - component: {fileID: 114836248718435550}
   - component: {fileID: 114038745916772092}
   - component: {fileID: 114952005024034310}
+  - component: {fileID: 81960840289847624}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -43,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926593206989238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.3, y: -22.8, z: -7.7143993}
+  m_LocalPosition: {x: -54, y: -22.8, z: -7.7143993}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,6 +89,13 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.7606072, y: 10.1742115, z: 0.41856128}
   m_Center: {x: 0.26957828, y: -1.5290041, z: -0.05712827}
+--- !u!81 &81960840289847624
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1926593206989238}
+  m_Enabled: 1
 --- !u!95 &95944713669224194
 Animator:
   serializedVersion: 3

@@ -913,7 +913,7 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[0]
-      value: Edwin|(My daughter, Emily, was taken by Lord Hoffmann 2 years ago.)
+      value: Edwin|(My daughter, Emily, was taken by Lord Hoffmann two years ago.)
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
