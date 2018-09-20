@@ -8,8 +8,8 @@ public class PlayerAnimation : MonoBehaviour
     private Animator _animator;
     private AudioSource _audioSource;
 
-    [Header("Walk")]
-    [SerializeField] private List<AudioClip> _walk;
+    //[Header("Walk")]
+    //[SerializeField] private List<AudioClip> _walk;
 
     [Header("Attack")]
     [SerializeField] private List<AudioClip> _attack;
@@ -17,13 +17,17 @@ public class PlayerAnimation : MonoBehaviour
     [Header("Dash")]
     [SerializeField] private List<AudioClip> _dash;
 
+    //[Header("Jump")]
+    //[SerializeField] private List<AudioClip> _jump;
+
     [Header("Jump")]
-    [SerializeField] private List<AudioClip> _jump;
+    [SerializeField] private List<AudioClip> _jumpAttack;
 
     // Use this for initialization
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void playRandomClip(List<AudioClip> pAudioClips)
@@ -61,7 +65,6 @@ public class PlayerAnimation : MonoBehaviour
 
     public void JumpAnimation()
     {
-        playRandomClip(_jump);
         _animator.Play("PlayerJump");
     }
 
@@ -115,7 +118,17 @@ public class PlayerAnimation : MonoBehaviour
 
     private void walkSound()
     {
-        playRandomClip(_walk);
+
+    }
+
+    private void attackSound(int index)
+    {
+        _audioSource.PlayOneShot(_attack[index]);
+    }
+
+    private void jumpAttackSound(int index)
+    {
+        _audioSource.PlayOneShot(_jumpAttack[index]);
     }
 
     public bool IsAttacking
