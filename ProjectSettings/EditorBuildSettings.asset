@@ -43,8 +43,8 @@ EditorBuildSettings:
       1.unity
     guid: dff1aa6fd7987e648b3dc3badf36dcb8
   - enabled: 0
-    path: Assets/_Scenes 1/n_scenes/save_angela/n_02_before_blacksmith.unity
-    guid: 0b527361021995148a97b1e6f09ae352
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/capture_angela/n_04_2_angela_captured_blacksmith_captured
       1.unity
@@ -57,8 +57,8 @@ EditorBuildSettings:
     path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_07_angela_captured_blacksmith_captured_city.unity
     guid: e4e6434b37a17c841b19bf66909838f8
   - enabled: 0
-    path: Assets/_Scenes 1/n_scenes/level_01.unity
-    guid: 16590c2745e99d54f9c850d9da0f4962
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/n_07_angela_2_captured_blacksmith_captured_city
       1.unity
@@ -117,12 +117,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/capture_angela/capture_oscar/Level4Placeholder_with.unity
     guid: 59a86ef315097f841b24a38417fed2a3
-  - enabled: 1
-    path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/Level4Placeholder_alone.unity
-    guid: 93ee33648ce39b749a1d7a0e0b1d7819
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/Level4Placeholder_alone.unity
+    guid: 93ee33648ce39b749a1d7a0e0b1d7819
   - enabled: 1
     path: Assets/_Scenes 1/n_scenes/capture_angela/save_oscar/n_07_angela_2_captured_blacksmith_captured_city
       2.unity
