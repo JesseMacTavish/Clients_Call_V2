@@ -41,8 +41,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926593206989238}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50.85, y: -22.8, z: -7.7143993}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: -1}
+  m_LocalPosition: {x: -42.75354, y: -23.53, z: 127.50747}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -116,6 +116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089b5ca61e5d2b84fab1be03d0da1501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _walk: []
+  _attack: []
+  _dash: []
+  _jump: []
 --- !u!114 &114238130285422632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,6 +160,7 @@ MonoBehaviour:
   Attackrange: 18
   DefaultDamage: 3
   LeapLengthAndHeight: {x: 1, y: 0}
+  DashDistance: 5
   screenShake: {fileID: 0}
   freezeTime: 0.1
 --- !u!212 &212773808761581138
