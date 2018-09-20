@@ -16,7 +16,7 @@ public class Attack : MonoBehaviour
     [Tooltip("How far the dash is")]
     public float DashDistance;
 
-    public ScreenShake screenShake;
+    [HideInInspector] public ScreenShake screenShake;
 
     public float freezeTime = 0.1f;
     private PlayerAnimation _animation;
@@ -48,6 +48,7 @@ public class Attack : MonoBehaviour
         _enemiesInRange = new List<GameObject>();
         _trigger = GetComponent<BoxCollider>();
         _trigger.size = new Vector3(Attackrange, _trigger.size.y, Attackrange);
+        screenShake = Camera.main.GetComponent<ScreenShake>();
     }
 
     void Update()
@@ -179,6 +180,25 @@ public class Attack : MonoBehaviour
         }
     }
 
+    private void dashAttack()
+    {
+        List<Enemy> enemies = getEnemiesInRange();
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            Enemy enemy = enemies[i];
+            if (enemy.Hit(Damage))
+            {
+                _enemiesInRange.RemoveAt(i);
+                i--;
+            }
+            
+            enemy.GetComponent<EnemyAnimation>().FreezeAnimation();
+            enemy.Invoke("UnFreezeAnimations", freezeTime);
+
+            StartCoroutine(screenShake.Shake(0.1f, 0.03f));
+        }
+    }
+
     private void throwEnemyUp()
     {
         if (getEnemiesInRange().Count > 0)
@@ -275,6 +295,8 @@ public class Attack : MonoBehaviour
         _value = 0;
 
         _dashing = true;
+
+        dashAttack();
     }
 
     private void dashing()
@@ -317,5 +339,13 @@ public class Attack : MonoBehaviour
     public void UnFreezeAnimations()
     {
         _animation.ResumeAnimation();
+    }
+
+    public int Damage
+    {
+        get
+        {
+            return DefaultDamage * (_combo + 1); 
+        }
     }
 }
