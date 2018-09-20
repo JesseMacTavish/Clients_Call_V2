@@ -29,7 +29,7 @@ public class PlayerAnimation : MonoBehaviour
     private void playRandomClip(List<AudioClip> pAudioClips)
     {
         int random = Random.Range(0, pAudioClips.Count);
-        //_audioSource.PlayOneShot(pAudioClips[random]); //TODO: all ready for sounds
+        _audioSource.PlayOneShot(pAudioClips[random]);
     }
 
     public void AttackAnimation()
