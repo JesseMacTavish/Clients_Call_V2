@@ -179,13 +179,13 @@ public class Enemy : MonoBehaviour
         switch (pSlash)
         {
             case 1:
-                if (!GetComponent<SpriteRenderer>().flipX)
-                    Instantiate(slash, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.1f), Quaternion.identity);
+                if (GetComponent<SpriteRenderer>().flipX)
+                    Instantiate(slash, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.1f), Quaternion.Euler(0, -180f, Random.Range(-60f, 60f)));
                 else
-                    Instantiate(slash, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.1f), Quaternion.Euler(0, -180f, 0));
+                    Instantiate(slash, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.1f), Quaternion.Euler(0, 0, Random.Range(-60f, 60f)));
                 break;
             case 2:
-                Instantiate(stab, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.1f), Quaternion.identity);
+                Instantiate(stab, new Vector3(transform.position.x, transform.position.y, transform.position.z - 0.1f), Quaternion.Euler(0, 0, Random.Range(-60f, 60f)));
                 break;
             case 3:
                 Instantiate(upSlash, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z - 0.1f), Quaternion.identity);

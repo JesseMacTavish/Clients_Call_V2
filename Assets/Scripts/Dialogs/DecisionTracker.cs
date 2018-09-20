@@ -32,7 +32,7 @@ public enum SetBool
 
 public class DecisionTracker : MonoBehaviour
 {
-    public static int Difficulty;
+    public static int Difficulty = 1;
 
     public static float killer;
     public static float explorer;

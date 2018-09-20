@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     [Header("Health bar slider")]
     [SerializeField] private Healthbar _healthbar;
+    [SerializeField] private GameObject _gameOverScreen;
 
     public void Hit(int pDamage)
     {
@@ -18,9 +19,7 @@ public class Player : MonoBehaviour
 
         if (_health <= 0)
         {
-            //Die
-            //GetComponent<PlayerAnimation>().DeathAnimation();
-            //Destroy(gameObject);
+            Invoke("Die", 1f);
         }
     }
 
@@ -30,5 +29,11 @@ public class Player : MonoBehaviour
         {
             return _health;
         }
+    }
+
+    void Die()
+    {
+        _gameOverScreen.SetActive(true);
+        Destroy(gameObject);
     }
 }

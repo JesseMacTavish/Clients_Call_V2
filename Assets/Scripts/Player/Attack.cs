@@ -264,4 +264,14 @@ public class Attack : MonoBehaviour
     {
         _animation.ResumeAnimation();
     }
+
+    void IncreaseHitBox()
+    {
+        _trigger.size = new Vector3(30, _trigger.size.y, 30);
+    }
+
+    void DecreaseHitBox()
+    {
+        _trigger.size = new Vector3(Attackrange, _trigger.size.y, Attackrange);
+    }
 }

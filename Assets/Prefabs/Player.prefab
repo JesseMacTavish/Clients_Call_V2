@@ -43,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926593206989238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.3, y: -22.8, z: -7.7143993}
+  m_LocalPosition: {x: -54, y: -22.8, z: -7.7143993}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 100
   _healthbar: {fileID: 0}
+  _gameOverScreen: {fileID: 0}
 --- !u!114 &114836248718435550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Attackrange: 18
-  DefaultDamage: 3
+  DefaultDamage: 1
   LeapLengthAndHeight: {x: 1, y: 0}
   screenShake: {fileID: 0}
   freezeTime: 0.1

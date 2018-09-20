@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/_Scenes 1/n_scenes/capture_angela/Level3Placeholder_captured.unity
     guid: 822a3638aada6e543890da7518eb5d88
   - enabled: 1
+    path: Assets/_Scenes 1/Menu_screen.unity
+    guid: 242ab6f4939270f4fb2f55526f4f4b26
+  - enabled: 1
     path: Assets/_Scenes 1/n_scenes/capture_angela/Level3Placeholder_alive.unity
     guid: 6baf815742dcd1e4a85f8de542a6119e
   - enabled: 1

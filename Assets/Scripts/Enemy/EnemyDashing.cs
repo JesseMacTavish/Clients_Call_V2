@@ -46,7 +46,6 @@ public class EnemyDashing : MonoBehaviour
 
     public void Dash()
     {
-        Debug.Log("but how..");
         _attacked = false;
         _oldPosition = transform.position;
         _dashDirection = _playerRigidBody.position - _oldPosition;

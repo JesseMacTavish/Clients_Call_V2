@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4282957422105390}
   - component: {fileID: 212619783800920428}
   - component: {fileID: 65865015156321516}
+  - component: {fileID: 82988373288714452}
   - component: {fileID: 114927874317958090}
   - component: {fileID: 95294162559709574}
   - component: {fileID: 114169755217542196}
@@ -47,7 +48,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1064272428018386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -54.57, y: -23.62, z: 125.2}
+  m_LocalPosition: {x: -45.15187, y: -23.12, z: -5.5241776}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,8 +64,103 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2571207, y: 8.8076, z: 0.3862508}
-  m_Center: {x: -0.39426166, y: -1.6086888, z: -0.21876016}
+  m_Size: {x: 1.3350041, y: 7.4959435, z: 0.43012628}
+  m_Center: {x: -0.35531998, y: -0.9528605, z: 0.14286682}
+--- !u!82 &82988373288714452
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1064272428018386}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95294162559709574
 Animator:
   serializedVersion: 3
@@ -152,7 +248,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imp: []
   _bat: []
-  _wraith: []
+  _wraith:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 643db62e222f84541817b7494f1220d9, type: 3}
+  - {fileID: 8300000, guid: 285a3ee9afb4c3245a65678ca26e8044, type: 3}
   _mos: []
   _fish: []
 --- !u!114 &114604626979710916
@@ -181,7 +280,7 @@ MonoBehaviour:
   dialogBox: {fileID: 0}
   audioSource: {fileID: 0}
   destroyAfter: 0
-  isJester: 0
+  isJester: 1
   dialogScript:
   - Friendly ghost|Hey, you found me!
   - Friendly ghost|but can you find me in other levels?
@@ -277,7 +376,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 540a5d5b75d4f7141a0bc8282fbb7a67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
