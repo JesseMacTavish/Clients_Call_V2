@@ -507,6 +507,11 @@ Prefab:
       propertyPath: pictures.Array.data[2]
       value: 
       objectReference: {fileID: 432417706}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: talkToOtherCharacter
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0

@@ -125,6 +125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089b5ca61e5d2b84fab1be03d0da1501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _walk: []
+  _attack: []
+  _dash: []
+  _jump: []
 --- !u!114 &114238130285422632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,6 +170,7 @@ MonoBehaviour:
   Attackrange: 18
   DefaultDamage: 1
   LeapLengthAndHeight: {x: 1, y: 0}
+  DashDistance: 8
   screenShake: {fileID: 0}
   freezeTime: 0.1
 --- !u!114 &114952005024034310

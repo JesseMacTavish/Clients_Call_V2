@@ -6,11 +6,11 @@ using System;
 
 public class InGameDialog : MonoBehaviour
 {
-    public GameObject dialogBox;
     public AudioSource audioSource;
     public bool destroyAfter;
     public bool isJester;
 
+    private GameObject dialogBox;
     private GameObject _player;
     private bool isTalkingToMe;
 
@@ -31,6 +31,7 @@ public class InGameDialog : MonoBehaviour
 
     void Start()
     {
+        dialogBox = GameObject.FindGameObjectWithTag("Canvas").transform.Find("Dialog box").gameObject;
         _dialog = dialogBox.GetComponentInChildren<Text>();
         _name = dialogBox.transform.Find("Name").GetComponent<Text>();
         _player = GameObject.FindGameObjectWithTag("Player");
