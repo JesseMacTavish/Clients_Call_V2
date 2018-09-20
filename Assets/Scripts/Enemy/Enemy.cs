@@ -245,7 +245,15 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            List<GameObject> enemies = other.GetComponent<Attack>().EnemiesInRange;
+            Attack attack = other.GetComponent<Attack>();
+
+            if (other.GetComponent<PlayerAnimation>().IsDashing)
+            {
+                Hit(attack.Damage);
+                return;
+            }
+
+            List<GameObject> enemies = attack.EnemiesInRange;
 
             if (!enemies.Contains(gameObject))
             {

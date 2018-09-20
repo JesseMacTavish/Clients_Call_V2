@@ -25,8 +25,8 @@ public class DialogHandler : MonoBehaviour
     Text _name;
     string[] _fullTextOptions;
     int _dialogBoxID = -1;
+    bool _optionsOn;
     bool _questionAsked;
-    float _optionsDelay;
 
     [Space]
     [TextArea]
@@ -73,15 +73,12 @@ public class DialogHandler : MonoBehaviour
     {
         Type();
 
-        if (_questionAsked)
-            _optionsDelay += Time.deltaTime;
-
-        if (Input.GetButtonDown("Fire1") && !_questionAsked)
+        if (Input.GetButtonDown("Fire1") && !_optionsOn)
         {
             Continue();
         }
 
-        if (optionsBox.activeInHierarchy && timedDecision)
+        if (_optionsOn && timedDecision)
         {
             CountDown();
         }
@@ -135,7 +132,6 @@ public class DialogHandler : MonoBehaviour
 
         string[] _script = dialogScript[_dialogBoxID].Split('|');
         _name.text = _script[0];
-        DetermineColor();
         string textLine = _script[1];
 
         //Add picture
@@ -177,7 +173,7 @@ public class DialogHandler : MonoBehaviour
         }
         _dialog.text = _typedCharacters;
 
-        if (_typedCharacters.Length == _text.Length && _questionAsked && _optionsDelay > 2f)
+        if (_typedCharacters.Length == _text.Length && _questionAsked)
         {
             ShowOptions();
         }
@@ -204,8 +200,8 @@ public class DialogHandler : MonoBehaviour
             _timeOnDecision = 0f;
         }
 
+        _optionsOn = true;
         _questionAsked = false;
-        _optionsDelay = 0;
     }
 
     protected void CloseOptions()
@@ -214,8 +210,9 @@ public class DialogHandler : MonoBehaviour
         {
             GameObject option = optionsBox.transform.GetChild(i).gameObject;
             option.SetActive(false);
-        }       
-        
+        }
+
+        _optionsOn = false;
         optionsBox.SetActive(false);
         sliders.SetActive(false);
     }
@@ -268,8 +265,8 @@ public class DialogHandler : MonoBehaviour
         if (_name.text == "Oscar")
         {
             SetTextColor(Color.white);
-        }  
-        
+        }
+
         if (_name.text == "William")
         {
             SetTextColor(Color.white);
@@ -321,3 +318,5 @@ public class DialogHandler : MonoBehaviour
         CloseOptions();
     }
 }
+
+

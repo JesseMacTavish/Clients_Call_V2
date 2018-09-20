@@ -29,12 +29,6 @@ public class EnemyStates : MonoBehaviour
         _animation = GetComponent<EnemyAnimation>();
     }
 
-    private void Update()
-    {
-        //todo: be sure to get rid of this update method later
-        _startState = CurrentState;
-    }
-
     public void ChangeState(EnemyState pState)
     {
         CurrentState = pState;

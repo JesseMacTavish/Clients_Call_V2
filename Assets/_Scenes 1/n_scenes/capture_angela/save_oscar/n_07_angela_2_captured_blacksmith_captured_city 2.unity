@@ -637,7 +637,6 @@ GameObject:
   - component: {fileID: 36804341}
   - component: {fileID: 36804340}
   - component: {fileID: 36804344}
-  - component: {fileID: 36804345}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -736,38 +735,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fonts:
   - {fileID: 12800000, guid: c8c9c72984c35474fb36ad59d85dd2b2, type: 3}
---- !u!114 &36804345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 36804339}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c53933e34728f2e46806c5b6261a15e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1712648660}
-  optionsBox: {fileID: 861312694}
-  sliders: {fileID: 791136214}
-  audioSource: {fileID: 0}
-  ammountOfOptions: 3
-  timedDecision: 1
-  givenTime: 10
-  talkToOtherCharacter: 0
-  otherCharacter: {fileID: 0}
-  dialogScript: []
-  answersScript: []
-  pictures: []
-  sounds: []
-  typeDelay: 0.03
-  defaultSceneToLoad: {fileID: 0}
-  sceneToLoad1: {fileID: 0}
-  sceneToLoad2: {fileID: 0}
-  sceneToLoad3: {fileID: 0}
-  Op1: 0
-  Op2: 0
-  Op3: 0
 --- !u!1 &149807899
 GameObject:
   m_ObjectHideFlags: 0
