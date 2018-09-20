@@ -9,48 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1034259406663738}
+  m_RootGameObject: {fileID: 1617309279179848}
   m_IsPrefabAsset: 1
---- !u!1 &1034259406663738
+--- !u!1 &1617309279179848
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4920584105117200}
-  - component: {fileID: 114708855911003516}
-  - component: {fileID: 82985660559036466}
+  - component: {fileID: 4975592907187822}
+  - component: {fileID: 82288247749522386}
+  - component: {fileID: 114189949717905360}
   m_Layer: 0
-  m_Name: NovelBGMusic
-  m_TagString: BGMusic
+  m_Name: BGMusic
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4920584105117200
+--- !u!4 &4975592907187822
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034259406663738}
+  m_GameObject: {fileID: 1617309279179848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 457.04865, y: 239.94649, z: -66.0683}
+  m_LocalPosition: {x: 46.030365, y: -23.53693, z: 29.881401}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82985660559036466
+--- !u!82 &82288247749522386
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034259406663738}
+  m_GameObject: {fileID: 1617309279179848}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 266feb3fdcd2d3e4399154fc68794d50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a46f30861e1872c41be242c75e5f7358, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -136,14 +136,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114708855911003516
+--- !u!114 &114189949717905360
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034259406663738}
+  m_GameObject: {fileID: 1617309279179848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6c61cc2552e5434fa0d3c1df1472176, type: 3}
+  m_Script: {fileID: 11500000, guid: b6a28f1f6bf95834ba27afad58b5ecc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
