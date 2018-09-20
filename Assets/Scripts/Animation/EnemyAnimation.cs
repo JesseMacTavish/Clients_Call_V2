@@ -98,7 +98,6 @@ public class EnemyAnimation : MonoBehaviour
 
     public void WalkAnimation()
     {
-        walkSound();
         _animator.Play(_type + "Walk");
     }
 

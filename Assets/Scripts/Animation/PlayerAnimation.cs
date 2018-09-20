@@ -6,6 +6,19 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator _animator;
+    private AudioSource _audioSource;
+
+    [Header("Walk")]
+    [SerializeField] private List<AudioClip> _walk;
+
+    [Header("Attack")]
+    [SerializeField] private List<AudioClip> _attack;
+
+    [Header("Dash")]
+    [SerializeField] private List<AudioClip> _dash;
+
+    [Header("Jump")]
+    [SerializeField] private List<AudioClip> _jump;
 
     // Use this for initialization
     void Start()
@@ -13,11 +26,21 @@ public class PlayerAnimation : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
+    private void playRandomClip(List<AudioClip> pAudioClips)
+    {
+        int random = Random.Range(0, pAudioClips.Count);
+        //_audioSource.PlayOneShot(pAudioClips[random]); //TODO: all ready for sounds
+    }
+
     public void AttackAnimation()
     {
         AnimatorStateInfo currentState = _animator.GetCurrentAnimatorStateInfo(0);
 
-        if (!IsAttacking)
+        if (IsJumping)
+        {
+            _animator.Play("PlayerJumpAttack");
+        }
+        else if (!IsAttacking)
         {
             _animator.Play("PlayerAttack");
         }
@@ -30,18 +53,16 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    public void JumpAnimation()
+    public void DashAnimation()
     {
-        _animator.Play("PlayerJump");
+        playRandomClip(_dash);
+        _animator.Play("PlayerDash");
     }
 
-    public bool IsAttacking
+    public void JumpAnimation()
     {
-        get
-        {
-            AnimatorStateInfo currentState = _animator.GetCurrentAnimatorStateInfo(0);
-            return (currentState.IsName("PlayerAttack") || (currentState.IsName("PlayerAttack2")));
-        }
+        playRandomClip(_jump);
+        _animator.Play("PlayerJump");
     }
 
     public void WalkAnimation()
@@ -62,24 +83,27 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    public void DeathAnimation()
+    public void DamageAnimation()
     {
-        AnimatorStateInfo currentState = _animator.GetCurrentAnimatorStateInfo(0);
-
-        if (currentState.IsName("PlayerDead"))
-        {
-            return;
-        }
-
-        _animator.Play("PlayerDead");
+        _animator.Play("PlayerDamage");
     }
 
-    public void StopAll()
+    public void ForceIdleAnimation()
     {
         _animator.Play("PlayerIdle");
     }
 
-    public void FreezeAnimation()
+    public void StopAll()
+    {
+        if (IsDamaged || IsJumping || IsDashing)
+        {
+            return;
+        }
+
+        _animator.Play("PlayerIdle");
+    }
+
+    public void FreezeAnimations()
     {
         _animator.speed = 0;
     }
@@ -87,5 +111,46 @@ public class PlayerAnimation : MonoBehaviour
     public void ResumeAnimation()
     {
         _animator.speed = 1;
+    }
+
+    private void walkSound()
+    {
+        playRandomClip(_walk);
+    }
+
+    public bool IsAttacking
+    {
+        get
+        {
+            AnimatorStateInfo currentState = _animator.GetCurrentAnimatorStateInfo(0);
+            return (currentState.IsName("PlayerAttack") || (currentState.IsName("PlayerAttack2")));
+        }
+    }
+
+    public bool IsJumping
+    {
+        get
+        {
+            AnimatorStateInfo currentState = _animator.GetCurrentAnimatorStateInfo(0);
+            return (currentState.IsName("PlayerJump") || currentState.IsName("PlayerJumpAttack"));
+        }
+    }
+
+    public bool IsDamaged
+    {
+        get
+        {
+            AnimatorStateInfo currentState = _animator.GetCurrentAnimatorStateInfo(0);
+            return (currentState.IsName("PlayerDamage"));
+        }
+    }
+
+    public bool IsDashing
+    {
+        get
+        {
+            AnimatorStateInfo currentState = _animator.GetCurrentAnimatorStateInfo(0);
+            return (currentState.IsName("PlayerDash"));
+        }
     }
 }
