@@ -80,6 +80,7 @@ public class InGameDialog : MonoBehaviour
 
         string[] _script = dialogScript[_dialogBoxID].Split('|');
         _name.text = _script[0];
+        DetermineColor();
         string textLine = _script[1];
 
         //Add sound
@@ -111,6 +112,45 @@ public class InGameDialog : MonoBehaviour
         _dialog.text = "";
         _typedCharacters = "";
         _text = "";
+    }
+
+    void DetermineColor()
+    {
+        if (_name.text == "Edwin")
+        {
+            SetTextColor(Color.white);
+        }
+
+        if (_name.text == "Ghost")
+        {
+            SetTextColor(Color.white);
+        }
+
+        if (_name.text == "Angela")
+        {
+            SetTextColor(Color.white);
+        }
+
+        if (_name.text == "Elizabeth")
+        {
+            SetTextColor(Color.white);
+        }
+
+        if (_name.text == "Oscar")
+        {
+            SetTextColor(Color.white);
+        }
+
+        if (_name.text == "William")
+        {
+            SetTextColor(Color.white);
+        }
+    }
+
+    void SetTextColor(Color pColor)
+    {
+        _dialog.color = pColor;
+        _name.color = pColor;
     }
 
     void OnTriggerEnter(Collider other)
