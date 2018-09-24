@@ -49,6 +49,10 @@ public class DialogHandler : MonoBehaviour
     public UnityEngine.Object sceneToLoad1;
     public UnityEngine.Object sceneToLoad2;
     public UnityEngine.Object sceneToLoad3;
+    public int defaultSceneToLoadID;
+    public int sceneToLoad1ID;
+    public int sceneToLoad2ID;
+    public int sceneToLoad3ID;
 
     public SetBool Op1;
     public SetBool Op2;
@@ -104,21 +108,21 @@ public class DialogHandler : MonoBehaviour
             {
                 dialogBox.SetActive(false);
                 if (_op1)
-                {
-                    SceneManager.LoadScene(sceneToLoad1.name);
+                {                    
+                    SceneManager.LoadScene(sceneToLoad1ID);
                 }
                 else if (_op2)
                 {
-                    SceneManager.LoadScene(sceneToLoad2.name);
+                    SceneManager.LoadScene(sceneToLoad2ID);
                 }
 
                 else if (_op3)
                 {
-                    SceneManager.LoadScene(sceneToLoad3.name);
+                    SceneManager.LoadScene(sceneToLoad3ID);
                 }
                 else
                 {
-                    SceneManager.LoadScene(defaultSceneToLoad.name);
+                    SceneManager.LoadScene(defaultSceneToLoadID);
                 }
             }
             else
@@ -132,6 +136,7 @@ public class DialogHandler : MonoBehaviour
 
         string[] _script = dialogScript[_dialogBoxID].Split('|');
         _name.text = _script[0];
+        DetermineColor();
         string textLine = _script[1];
 
         //Add picture
@@ -249,27 +254,32 @@ public class DialogHandler : MonoBehaviour
 
         if (_name.text == "Ghost")
         {
-            SetTextColor(Color.white);
+            SetTextColor(Color.cyan);
         }
 
         if (_name.text == "Angela")
         {
-            SetTextColor(Color.white);
+            SetTextColor(Color.magenta);
         }
 
         if (_name.text == "Elizabeth")
         {
-            SetTextColor(Color.white);
+            SetTextColor(Color.yellow);
         }
 
         if (_name.text == "Oscar")
         {
-            SetTextColor(Color.white);
+            SetTextColor(Color.red);
         }
 
         if (_name.text == "William")
         {
-            SetTextColor(Color.white);
+            SetTextColor(Color.grey);
+        }
+
+        if (_name.text == "Lord")
+        {
+            SetTextColor(Color.green);
         }
     }
 
@@ -277,7 +287,7 @@ public class DialogHandler : MonoBehaviour
     {
         _dialog.color = pColor;
         _name.color = pColor;
-    }
+    }      
 
     public void Option1()
     {

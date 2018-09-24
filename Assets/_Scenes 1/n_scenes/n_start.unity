@@ -254,6 +254,10 @@ MonoBehaviour:
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
+  defaultSceneToLoadID: 0
+  sceneToLoad1ID: 0
+  sceneToLoad2ID: 0
+  sceneToLoad3ID: 0
   Op1: 0
   Op2: 0
   Op3: 0
@@ -494,53 +498,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 249381565}
   m_CullTransparentMesh: 0
---- !u!1001 &261824437
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 457.04865
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 239.94649
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -66.0683
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 82985660559036466, guid: 55915efb67d7643469293456180bf235,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 266feb3fdcd2d3e4399154fc68794d50, type: 3}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 55915efb67d7643469293456180bf235, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &346264982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +970,11 @@ Prefab:
       value: 
       objectReference: {fileID: 102900000, guid: 925ec572851cccf4cb660db2ee1820e4,
         type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: defaultSceneToLoadID
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0

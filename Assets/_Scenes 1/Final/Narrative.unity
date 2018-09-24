@@ -1547,9 +1547,12 @@ MonoBehaviour:
   dialogBox: {fileID: 1712648660}
   resScreen: {fileID: 886496311}
   audioSource: {fileID: 399549389}
-  pictures: []
+  pictures:
+  - {fileID: 886496311}
   sounds: []
-  defaultSceneToload: {fileID: 0}
+  defaultSceneToload: {fileID: 102900000, guid: 242ab6f4939270f4fb2f55526f4f4b26,
+    type: 3}
+  defaultSceneToloadID: 0
   typeDelay: 0.03
 --- !u!1 &606412297
 GameObject:
@@ -1908,6 +1911,10 @@ Prefab:
     - target: {fileID: 114023978297217862, guid: dbb21f3f6e719584089d7ab70e68d64f,
         type: 2}
       propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923747391271114, guid: dbb21f3f6e719584089d7ab70e68d64f, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

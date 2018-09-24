@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 
         if (_health <= 0)
         {
-            Invoke("Die", 1f);
+            Invoke("Die", 0.3f);
         }
     }
 

@@ -16,6 +16,7 @@ public class DialogResolution : MonoBehaviour
     private List<string> dialogScript = new List<string>();
 
     public UnityEngine.Object defaultSceneToload;
+    public int defaultSceneToloadID;
 
     Text _dialog;
     int _dialogBoxID = -1;
@@ -316,7 +317,7 @@ public class DialogResolution : MonoBehaviour
         }
         else
         {
-            resScreen.SetActive(true);
+            SceneManager.LoadScene(defaultSceneToloadID);
         }
 
         string textLine = dialogScript[_dialogBoxID];

@@ -18,6 +18,8 @@ public class Attack : MonoBehaviour
 
     [HideInInspector] public ScreenShake screenShake;
 
+    public List<GameObject> EnemiesInRange { get; private set; }
+
     public float freezeTime = 0.1f;
     private PlayerAnimation _animation;
     private BoxCollider _trigger;
@@ -25,9 +27,6 @@ public class Attack : MonoBehaviour
 
     private bool _pressedAttack;
     private int _combo = 0;
-
-    private List<GameObject> _enemiesInRange;
-
     private bool _leaping;
     private bool _highestPoint;
     private Vector3 _oldPosition;
@@ -45,7 +44,7 @@ public class Attack : MonoBehaviour
         _renderer = GetComponent<SpriteRenderer>();
         _rigidbody = GetComponent<Rigidbody>();
 
-        _enemiesInRange = new List<GameObject>();
+        EnemiesInRange = new List<GameObject>();
         _trigger = GetComponent<BoxCollider>();
         _trigger.size = new Vector3(Attackrange, _trigger.size.y, Attackrange);
         screenShake = Camera.main.GetComponent<ScreenShake>();
@@ -71,9 +70,9 @@ public class Attack : MonoBehaviour
 
             _animation.AttackAnimation();
         }
-        else if (Input.GetButtonDown("Fire2")) //Need to make it so that dash hurts enemies
+        else if (Input.GetButtonDown("Fire2"))
         {
-            if (!_animation.IsAttacking && !_animation.IsDashing) //&& !_animation.IsJumping) //TODO: ask malte
+            if (!_animation.IsAttacking && !_animation.IsDashing)
             {
                 dash();
             }
@@ -118,13 +117,7 @@ public class Attack : MonoBehaviour
         _pressedAttack = false;
     }
 
-    public List<GameObject> EnemiesInRange
-    {
-        get
-        {
-            return _enemiesInRange;
-        }
-    }
+
 
     private void attack() //todo: seriously, this can be easily improved
     {
@@ -132,21 +125,31 @@ public class Attack : MonoBehaviour
 
         damage *= (_combo + 1);
 
-        for (int i = 0; i < _enemiesInRange.Count; i++)
+        for (int i = 0; i < EnemiesInRange.Count; i++)
         {
-            if (_enemiesInRange[i] == null)
+            if (EnemiesInRange[i] == null)
             {
-                _enemiesInRange.RemoveAt(i);
+                EnemiesInRange.RemoveAt(i);
+            }
+
+            //Cheap but effective crutch
+            Enemy enemy = null;
+            try
+            {
+                enemy = EnemiesInRange[i].GetComponent<Enemy>();
+            }
+            catch
+            {
+                return;
             }
 
             if (_renderer.flipX)
             {
-                Enemy enemy = _enemiesInRange[i].GetComponent<Enemy>();
                 if (enemy.GetComponent<Transform>().position.x <= GetComponent<Rigidbody>().position.x)
                 {
                     if (enemy.Hit(damage))
                     {
-                        _enemiesInRange.RemoveAt(i);
+                        EnemiesInRange.RemoveAt(i);
                         i--;
                     }
 
@@ -160,12 +163,11 @@ public class Attack : MonoBehaviour
             }
             else
             {
-                Enemy enemy = _enemiesInRange[i].GetComponent<Enemy>();
                 if (enemy.GetComponent<Transform>().position.x >= GetComponent<Rigidbody>().position.x)
                 {
                     if (enemy.Hit(damage))
                     {
-                        _enemiesInRange.RemoveAt(i);
+                        EnemiesInRange.RemoveAt(i);
                         i--;
                     }
 
@@ -188,14 +190,12 @@ public class Attack : MonoBehaviour
             Enemy enemy = enemies[i];
             if (enemy.Hit(Damage))
             {
-                _enemiesInRange.RemoveAt(i);
+                EnemiesInRange.RemoveAt(i);
                 i--;
             }
-            
+
             enemy.GetComponent<EnemyAnimation>().FreezeAnimation();
             enemy.Invoke("UnFreezeAnimations", freezeTime);
-
-            StartCoroutine(screenShake.Shake(0.1f, 0.03f));
         }
     }
 
@@ -308,15 +308,25 @@ public class Attack : MonoBehaviour
         if (_value >= 1)
         {
             _dashing = false;
+            _animation.WalkAnimation();
         }
     }
 
     List<Enemy> getEnemiesInRange()
     {
         List<Enemy> enemies = new List<Enemy>();
-        for (int i = 0; i < _enemiesInRange.Count; i++)
+        for (int i = 0; i < EnemiesInRange.Count; i++)
         {
-            Enemy enemy = _enemiesInRange[i].GetComponent<Enemy>();
+            Enemy enemy = null;
+            try
+            {
+                enemy = EnemiesInRange[i].GetComponent<Enemy>();
+            }
+            catch
+            {
+                continue;
+            }
+
             if (_renderer.flipX)
             {
                 if (enemy.GetComponent<Transform>().position.x <= _rigidbody.position.x)
@@ -345,10 +355,10 @@ public class Attack : MonoBehaviour
     {
         get
         {
-            return DefaultDamage * (_combo + 1); 
+            return DefaultDamage * (_combo + 1);
         }
-	}
-	
+    }
+
     void IncreaseHitBox()
     {
         _trigger.size = new Vector3(30, _trigger.size.y, 30);

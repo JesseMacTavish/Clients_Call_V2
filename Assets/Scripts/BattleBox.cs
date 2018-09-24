@@ -9,6 +9,7 @@ public class BattleBox : MonoBehaviour
     private GameObject wave;
     public bool isTransition;
     public Object sceneToLoad;
+    public int sceneToLoadID;
     public GameObject afterTalk;
 
     GameObject _canvas;
@@ -39,7 +40,7 @@ public class BattleBox : MonoBehaviour
 
         if (_camera.EndOfScene)
         {
-            SceneManager.LoadScene(sceneToLoad.name);
+            SceneManager.LoadScene(sceneToLoadID);
         }
     }
 

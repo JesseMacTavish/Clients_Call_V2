@@ -6,13 +6,14 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public UnityEngine.Object sceneToLoad;
+    public Object sceneToLoad;
+    public int sceneToLoadID;
 
     public GameObject StartScreen;
     public GameObject[] DifficultyScreen;
 
     private bool _showedDifficulty;
-
+    bool _loadScene;
     // Use this for initialization
     void Start()
     {
@@ -46,8 +47,8 @@ public class MainMenu : MonoBehaviour
     }
 
     private void loadNextScene()
-    {
-        SceneManager.LoadScene(sceneToLoad.name);
+    {    
+        SceneManager.LoadScene(sceneToLoadID);
     }
 
     public void EasyDifficulty()

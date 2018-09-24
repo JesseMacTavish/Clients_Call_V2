@@ -198,7 +198,6 @@ public class InGameDialog : MonoBehaviour
         LevelTracker _playerTracker = _player.GetComponent<LevelTracker>();
 
         _playerTracker.foundJesterThisLevel = true;
-
         DecisionTracker.socializer += 3;
         DecisionTracker.explorer += 1;
 

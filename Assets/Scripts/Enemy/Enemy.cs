@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
 
     private EnemyAnimation _animation;
     private Rigidbody _playerRigidbody;
+    [HideInInspector] public ScreenShake screenShake;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class Enemy : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         _playerRigidbody = player.GetComponent<Rigidbody>();
 
+        screenShake = Camera.main.GetComponent<ScreenShake>();
         _animation = GetComponent<EnemyAnimation>();
         _state = GetComponent<EnemyStates>();
         _startY = transform.position.y;
@@ -250,6 +252,8 @@ public class Enemy : MonoBehaviour
             if (other.GetComponent<PlayerAnimation>().IsDashing)
             {
                 Hit(attack.Damage);
+                StartCoroutine(screenShake.Shake(0.1f, 0.03f));
+                SpawnSlash(1);
                 return;
             }
 

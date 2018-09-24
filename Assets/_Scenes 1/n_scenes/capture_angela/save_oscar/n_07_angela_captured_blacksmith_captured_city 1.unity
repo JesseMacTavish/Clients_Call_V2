@@ -196,41 +196,42 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[4]
-      value: "??? 1| ...small creatures we can\u2019t even see? like ghosts?+0"
+      value: "Stranger 1| ...small creatures we can\u2019t even see? like ghosts?+0"
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[5]
-      value: "??? 1|That does sound weird, no wonder The Lord didn\u2019t allow you
-        to publish your research on\u2026 what did you call them? Schells?"
+      value: "Stranger 1|That does sound weird, no wonder The Lord didn\u2019t allow
+        you to publish your research on\u2026 what did you call them? Schells?"
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[6]
-      value: ??? 2|Cells, and it is not that weird. You see, they are not invisible,
+      value: Stranger 2|Cells, and it is not that weird. You see, they are not invisible,
         they are just too small to be seen, unless you use a microscope.+1
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[7]
-      value: '??? 1|A micro- what? '
+      value: 'Stranger 1|A micro- what? '
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[8]
-      value: "??? 1|\u2026"
+      value: "Stranger 1|\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[9]
-      value: "??? 1| Nevermind, im just angry he also rejected my right to work as
-        an actress here. It\u2019s hard enough to be new in town, but now I am also
-        jobless."
+      value: "Stranger 1| Nevermind, im just angry he also rejected my right to work
+        as an actress here. It\u2019s hard enough to be new in town, but now I am
+        also jobless."
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[10]
-      value: ??? 1|Thank you for coming with me to ask for allowance though, father.
+      value: Stranger 1|Thank you for coming with me to ask for allowance though,
+        father.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -287,8 +288,8 @@ Prefab:
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: dialogScript.Array.data[12]
-      value: ??? 1|You have business with the Lord? Maybe we can help each other out
-        then. The Church is right over there anyway.
+      value: Stranger 1|You have business with the Lord? Maybe we can help each other
+        out then. The Church is right over there anyway.
       objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
@@ -617,6 +618,21 @@ Prefab:
       value: 
       objectReference: {fileID: 102900000, guid: 28e69d43d9b6db44a936125d8e3976e0,
         type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: ammountOfOptions
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sceneToLoad1ID
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: sceneToLoad2ID
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0
@@ -756,9 +772,14 @@ MonoBehaviour:
   pictures: []
   sounds: []
   typeDelay: 0.03
+  defaultSceneToLoad: {fileID: 0}
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
+  defaultSceneToLoadID: 0
+  sceneToLoad1ID: 0
+  sceneToLoad2ID: 0
+  sceneToLoad3ID: 0
   Op1: 0
   Op2: 0
   Op3: 0
@@ -912,6 +933,48 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 249381565}
   m_CullTransparentMesh: 0
+--- !u!1001 &292213391
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 457.04865
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 239.94649
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -66.0683
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920584105117200, guid: 55915efb67d7643469293456180bf235, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55915efb67d7643469293456180bf235, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &346264982
 GameObject:
   m_ObjectHideFlags: 0

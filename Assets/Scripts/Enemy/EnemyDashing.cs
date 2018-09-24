@@ -56,6 +56,9 @@ public class EnemyDashing : MonoBehaviour
 
     private void dashing()
     {
+        if (_playerRigidBody == null)
+            return;
+
         _value += 1f / _frames;
 
         transform.position = _oldPosition + _dashDirection * _value;

@@ -603,14 +603,12 @@ Prefab:
         type: 2}
       propertyPath: sceneToLoad1
       value: 
-      objectReference: {fileID: 102900000, guid: 28e69d43d9b6db44a936125d8e3976e0,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
         type: 2}
       propertyPath: sceneToLoad2
       value: 
-      objectReference: {fileID: 102900000, guid: 28e69d43d9b6db44a936125d8e3976e0,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1862819269300362, guid: de6224a634c46054abaffcff46c4b794, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -641,6 +639,11 @@ Prefab:
       value: 
       objectReference: {fileID: 102900000, guid: 1fc9485df804f29439fd5bb6d82c17ae,
         type: 3}
+    - target: {fileID: 114785078935709552, guid: de6224a634c46054abaffcff46c4b794,
+        type: 2}
+      propertyPath: defaultSceneToLoadID
+      value: 52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6224a634c46054abaffcff46c4b794, type: 2}
   m_IsPrefabAsset: 0
@@ -784,6 +787,10 @@ MonoBehaviour:
   sceneToLoad1: {fileID: 0}
   sceneToLoad2: {fileID: 0}
   sceneToLoad3: {fileID: 0}
+  defaultSceneToLoadID: 0
+  sceneToLoad1ID: 0
+  sceneToLoad2ID: 0
+  sceneToLoad3ID: 0
   Op1: 0
   Op2: 0
   Op3: 0
